@@ -1,0 +1,99 @@
+
+FROM: abcd-options
+pipeline_setup:
+  pipeline_name: pipeline4
+  freesurfer_dir: /ocean/projects/med250004p/bshresth/projects/solo_fs_runs
+
+segmentation:
+
+  # Automatically segment anatomical images into white matter, gray matter,
+  # and CSF based on prior probability maps.
+  run: On
+  tissue_segmentation:
+
+    # using: ['FSL-FAST', 'Template_Based', 'ANTs_Prior_Based', 'FreeSurfer']
+    # this is a fork point
+    using: [FSL-FAST]
+surface_analysis:
+
+  # Run freesurfer_abcd_preproc to obtain preprocessed T1w for reconall
+  abcd_prefreesurfer_prep:
+    run: Off
+
+
+  freesurfer:
+    run_reconall: Off
+
+    # Ingress freesurfer recon-all folder
+    ingress_reconall: On
+
+  # Run ABCD-HCP post FreeSurfer and fMRISurface pipeline
+  post_freesurfer:
+    run: Off
+
+
+  amplitude_low_frequency_fluctuation:
+    run: Off
+
+  regional_homogeneity:
+    run: Off
+
+  surface_connectivity:
+    run: Off
+    surface_parcellation_template: /cpac_templates/Schaefer2018_200Parcels_17Networks_order.dlabel.nii
+
+anatomical_preproc:
+  run: On
+  acpc_alignment:
+    T1w_brain_ACPC_template: $FSLDIR/data/standard/MNI152_T1_1mm_brain.nii.gz
+    run: Off
+
+    # Run ACPC alignment before non-local means filtering or N4 bias
+    # correction
+    run_before_preproc: Off
+
+    # ACPC aligned template
+    T1w_ACPC_template: /opt/dcan-tools/pipeline/global/templates/MNI152_T1_1mm.nii.gz
+
+  brain_extraction:
+    run: On
+    # using: ['3dSkullStrip', 'BET', 'UNet', 'niworkflows-ants', 'FreeSurfer-ABCD', 'FreeSurfer-BET-Tight', 'FreeSurfer-BET-Loose', 'FreeSurfer-Brainmask']
+    # this is a fork option
+    using: [FreeSurfer-ABCD]
+
+  # Non-local means filtering via ANTs DenoiseImage
+  non_local_means_filtering:
+
+    # this is a fork option
+    run: [Off]
+
+    # options: 'Gaussian' or 'Rician'
+    noise_model: Rician
+
+  # N4 bias field correction via ANTs
+  n4_bias_field_correction:
+
+    # this is a fork option
+    run: [Off]
+
+    # An integer to resample the input image to save computation time. Shrink factors <= 4 are commonly used.
+    shrink_factor: 4
+  restore_t1w_intensity:
+    run: Off
+
+registration_workflows:
+
+  # sink native transform files to the output directory
+  sink_native_transforms: Off
+  anatomical_registration:
+    run: On
+
+
+nuisance_corrections:
+  2-nuisance_regression:
+
+    # this is a fork point
+    #   run: [On, Off] - this will run both and fork the pipeline
+    run: [Off]
+    # switch to Off if nuisance regression is off and you don't want to write out the regressors
+    create_regressors: Off
