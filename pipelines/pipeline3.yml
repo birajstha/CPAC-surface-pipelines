@@ -17,7 +17,7 @@ pipeline_setup:
   output_directory:
     quality_control:
       # Generate eXtensible Connectivity Pipeline-style quality control files
-      generate_xcpqc_files: On
+      generate_xcpqc_files: Off
   system_config:
 
     # The maximum amount of memory each participant's workflow can allocate.
@@ -28,6 +28,9 @@ pipeline_setup:
     # - It is recommended that you set this to a value that when multiplied by
     #   'Number of Participants to Run Simultaneously' is as much RAM you can safely allocate.
     maximum_memory_per_participant: 10.0
+    random_seed: 1
+    
+    raise_insufficient: Off
 
 # PREPROCESSING
 # -------------
@@ -124,39 +127,7 @@ registration_workflows:
   anatomical_registration:
     run: On
     registration:
-      FSL-FNIRT:
 
-        # The resolution to which anatomical images should be transformed during registration.
-        # This is the resolution at which processed anatomical files will be output.
-        # specifically for monkey pipeline
-        ref_resolution: 2mm
-
-        # Template to be used during registration.
-        # It is for monkey pipeline specifically.
-        FNIRT_T1w_brain_template:
-
-        # Template to be used during registration.
-        # It is for monkey pipeline specifically.
-        FNIRT_T1w_template:
-
-        # Configuration file to be used by FSL to set FNIRT parameters.
-        # It is not necessary to change this path unless you intend to use custom FNIRT parameters or a non-standard template.
-        fnirt_config: T1_2_MNI152_2mm
-
-        # Reference mask for FSL registration.
-        ref_mask: /usr/share/fsl/6.0/data/standard/MNI152_T1_${resolution_for_anat}_brain_mask_dil.nii.gz
-
-        # Interpolation method for writing out transformed anatomical images.
-        # Possible values: trilinear, sinc, spline
-        interpolation: sinc
-
-        # Identity matrix used during FSL-based resampling of anatomical-space data throughout the pipeline.
-        # It is not necessary to change this path unless you intend to use a different template.
-        identity_matrix: /usr/share/fsl/6.0/etc/flirtsch/ident.mat
-
-      # using: ['ANTS', 'FSL', 'FSL-linear']
-      # this is a fork point
-      #   selecting both ['ANTS', 'FSL'] will run both and fork the pipeline
       using: [ANTS]
 
       # option parameters

@@ -2,7 +2,11 @@
 FROM: abcd-options
 pipeline_setup:
   pipeline_name: pipeline7
-  freesurfer_dir: /home/bshrestha/projects/solo_fs_runs
+  freesurfer_dir: /ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/freesurfer
+  system_config:
+    maximum_memory_per_participant: 10.0
+    random_seed: 1
+    raise_insufficient: Off
 
 segmentation:
 

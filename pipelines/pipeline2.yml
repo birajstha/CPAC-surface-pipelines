@@ -17,9 +17,8 @@ pipeline_setup:
   output_directory:
     quality_control:
       # Generate eXtensible Connectivity Pipeline-style quality control files
-      generate_xcpqc_files: On
+      generate_xcpqc_files: Off
   system_config:
-
     # The maximum amount of memory each participant's workflow can allocate.
     # Use this to place an upper bound of memory usage.
     # - Warning: 'Memory Per Participant' multiplied by 'Number of Participants to Run Simultaneously'
@@ -28,6 +27,9 @@ pipeline_setup:
     # - It is recommended that you set this to a value that when multiplied by
     #   'Number of Participants to Run Simultaneously' is as much RAM you can safely allocate.
     maximum_memory_per_participant: 10.0
+    random_seed: 1
+    
+    raise_insufficient: Off
 
 # PREPROCESSING
 # -------------

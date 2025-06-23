@@ -2,7 +2,12 @@
 FROM: abcd-options
 pipeline_setup:
   pipeline_name: pipeline4
-  freesurfer_dir: /ocean/projects/med250004p/bshresth/projects/solo_fs_runs
+  freesurfer_dir: /ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/freesurfer
+
+  system_config:
+    maximum_memory_per_participant: 10.0
+    random_seed: 1
+    raise_insufficient: Off
 
 segmentation:
 
@@ -97,3 +102,16 @@ nuisance_corrections:
     run: [Off]
     # switch to Off if nuisance regression is off and you don't want to write out the regressors
     create_regressors: Off
+
+post_processing:
+  spatial_smoothing:
+    run: Off
+  z-scoring:
+    run: Off
+
+seed_based_correlation_analysis:
+  norm_timeseries_for_DR: Off
+
+PyPEER:
+  minimal_nuisance_correction:
+    peer_gsr: Off

@@ -28,6 +28,10 @@ pipeline_setup:
     # - It is recommended that you set this to a value that when multiplied by
     #   'Number of Participants to Run Simultaneously' is as much RAM you can safely allocate.
     maximum_memory_per_participant: 10.0
+    
+    random_seed: 1
+    
+    raise_insufficient: Off
 
 # PREPROCESSING
 # -------------
