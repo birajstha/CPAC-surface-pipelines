@@ -1,0 +1,1417 @@
+250624-00:33:09,647 nipype.workflow INFO:
+	 Skipping BIDS validator...
+250624-00:33:09,879 nipype.workflow INFO:
+	 #### Running C-PAC for sub-NDARINV003RTV85
+250624-00:33:09,879 nipype.workflow INFO:
+	 Number of participants to run in parallel: 1
+250624-00:33:09,880 nipype.workflow INFO:
+	 Input directory: /ocean/projects/med250004p/bshresth/projects/data
+250624-00:33:09,880 nipype.workflow INFO:
+	 Output directory: /ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/output
+Working directory: /ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/working
+Log directory: /ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/log
+Remove working directory: True
+Available memory: 14.0 (GB)
+Available threads: 1
+Number of threads for ANTs: 1
+250624-00:33:09,880 nipype.utils INFO:
+	 Parsing /ocean/projects/med250004p/bshresth/projects/data..
+250624-00:33:14,768 nipype.workflow INFO:
+	 Starting participant level processing
+250624-00:33:14,768 nipype.workflow INFO:
+	 Run called with config file /ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/log/pipeline_pipeline5/sub-NDARINV003RTV85_ses-baselineYear1Arm1/cpac_pipeline_config_67deb741_2025-06-24T00-33-09Z.yml
+/code/CPAC/pipeline/cpac_runner.py:384: UserWarning: We recommend that the working directory full path should have less then 70 characters. Long paths might not work in your operating system.
+  warnings.warn(
+/code/CPAC/pipeline/cpac_runner.py:389: UserWarning: Current working directory: /ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/working
+  warnings.warn(
+250624-00:33:15,116 nipype.workflow INFO:
+	 
+    Environment
+    ===========
+    AFNI: 23.3.09:linux_universal
+    bids-validator: 1.14.6
+    ldd: (Ubuntu GLIBC 2.35-0ubuntu3.1) 2.35
+    Python: 3.10.6 | packaged by conda-forge | (main, Aug 22 2022, 20:36:39) [GCC 10.4.0]
+      Python packages
+      ---------------
+      acres: 0.5.0
+      anyio: 3.7.1
+      argon2-cffi: 21.3.0
+      argon2-cffi-bindings: 21.2.0
+      astor: 0.8.1
+      asttokens: 2.2.1
+      async-lru: 2.0.3
+      attrs: 23.1.0
+      awscli: 1.29.4
+      Babel: 2.12.1
+      backcall: 0.2.0
+      backports.functools-lru-cache: 1.6.5
+      backports.tarfile: 1.2.0
+      beautifulsoup4: 4.12.2
+      bids-validator: 1.14.7.post0
+      bidsschematools: 1.0.10
+      bleach: 6.0.0
+      boto3: 1.28.4
+      botocore: 1.31.4
+      Brotli: 1.0.9
+      brotlipy: 0.7.0
+      cached-property: 1.5.2
+      certifi: 2025.6.15
+      cffi: 1.15.1
+      charset-normalizer: 3.1.0
+      ci-info: 0.3.0
+      ciftify: 3.0.0+fcpindi
+      click: 8.1.5
+      click-aliases: 1.0.1
+      colorama: 0.4.4
+      comm: 0.1.3
+      conda: 23.1.0
+      conda-package-handling: 2.0.2
+      conda_package_streaming: 0.8.0
+      configparser: 5.3.0
+      contourpy: 1.1.0
+      CPAC: 1.8.8.dev1
+      cryptography: 44.0.1
+      cycler: 0.11.0
+      Cython: 3.1.2
+      debugpy: 1.6.7
+      decorator: 5.1.1
+      defusedxml: 0.7.1
+      dill: 0.3.6
+      docopt: 0.6.2
+      docutils: 0.15.2
+      entrypoints: 0.4
+      etelemetry: 0.3.1
+      exceptiongroup: 1.1.2
+      executing: 1.2.0
+      fastjsonschema: 2.17.1
+      file-tree: 1.2.1
+      file-tree-fsl: 0.2.1
+      filelock: 3.18.0
+      flit_core: 3.9.0
+      flowdump: 0.1.2
+      fonttools: 4.41.0
+      formulaic: 0.5.2
+      fsl-base: 2302.0
+      fsl-get-standard: 0.1.0
+      fsl-sub: 2.7.5
+      fsl-sub-plugin-sge: 1.5.2
+      fsl-sub-plugin-slurm: 1.4.4
+      fsleyes: 1.6.1
+      fsleyes-props: 1.10.0
+      fsleyes-widgets: 0.14.3
+      fslinstaller: 3.4.1
+      fslpy: 3.11.3
+      future: 0.18.3
+      ghalton: 0.6.1
+      h5py: 3.8.0
+      hlsvdpropy: 2.0.1
+      idna: 3.4
+      imageio: 2.37.0
+      importlib-metadata: 6.8.0
+      importlib-resources: 6.0.0
+      indexed-gzip: 1.7.1
+      INDI-Tools: 0.0.7
+      interface-meta: 1.3.0
+      ipykernel: 6.24.0
+      ipython: 8.14.0
+      isodate: 0.7.2
+      jedi: 0.18.2
+      Jinja2: 3.1.2
+      jmespath: 1.0.1
+      joblib: 1.2.0
+      json5: 0.9.14
+      jsonschema: 4.18.4
+      jsonschema-specifications: 2023.7.1
+      jupyter-events: 0.6.3
+      jupyter-lsp: 2.2.0
+      jupyter_client: 8.3.0
+      jupyter_core: 5.3.1
+      jupyter_server: 2.7.0
+      jupyter_server_terminals: 0.4.4
+      jupyterlab: 4.0.3
+      jupyterlab-pygments: 0.2.2
+      jupyterlab_server: 2.23.0
+      kiwisolver: 1.4.4
+      lazy_loader: 0.4
+      libmambapy: 1.4.2
+      lockfile: 0.12.2
+      looseversion: 1.3.0
+      lxml: 4.9.2
+      mamba: 1.4.2
+      markdown-it-py: 3.0.0
+      MarkupSafe: 2.1.3
+      matplotlib: 3.7.1
+      matplotlib-inline: 0.1.6
+      mdurl: 0.1.0
+      mistune: 3.0.0
+      munkres: 1.1.4
+      nbclient: 0.8.0
+      nbconvert: 7.7.2
+      nbformat: 5.9.1
+      nest-asyncio: 1.5.6
+      networkx: 3.1
+      nibabel: 5.1.0
+      nilearn: 0.10.0
+      nipype: 1.8.6
+      nitransforms: 24.0.2
+      niworkflows: 1.13.4
+      nose: 1.3.7
+      notebook: 7.0.0
+      notebook_shim: 0.2.3
+      num2words: 0.5.14
+      numpy: 1.25.1
+      overrides: 7.3.1
+      packaging: 23.1
+      pandas: 2.0.3
+      pandocfilters: 1.5.0
+      parse: 1.19.1
+      parso: 0.8.3
+      pathlib2: 2.3.7.post1
+      pathvalidate: 2.5.2
+      patsy: 0.5.3
+      pexpect: 4.8.0
+      pickleshare: 0.7.5
+      Pillow: 9.2.0
+      pip: 23.3
+      pkgutil_resolve_name: 1.3.10
+      platformdirs: 3.9.1
+      pluggy: 1.2.0
+      pooch: 1.7.0
+      progressbar2: 4.2.0
+      prometheus-client: 0.17.1
+      prompt-toolkit: 3.0.39
+      prov: 2.0.0
+      psutil: 5.9.5
+      ptyprocess: 0.7.0
+      pure-eval: 0.2.2
+      pyasn1: 0.4.8
+      PyBASC: 0.6.1
+      pybids: 0.15.6
+      pycosat: 0.6.4
+      pycparser: 2.21
+      pydicom: 2.4.1
+      pydot: 4.0.0
+      Pygments: 2.15.1
+      pygraphviz: 1.14
+      PyOpenGL: 3.1.6
+      pyOpenSSL: 23.2.0
+      pyparsing: 3.2.3
+      PyPEER: 1.1
+      PySocks: 1.7.1
+      python-dateutil: 2.8.2
+      python-json-logger: 2.0.7
+      python-utils: 3.7.0
+      pytz: 2023.3
+      PyYAML: 6.0
+      pyzmq: 25.1.0
+      rdflib: 7.1.4
+      referencing: 0.30.0
+      requests: 2.32.3
+      rfc3339-validator: 0.1.4
+      rfc3986-validator: 0.1.1
+      rich: 13.4.2
+      rpds-py: 0.9.2
+      rsa: 4.7.2
+      Rtree: 1.0.1
+      ruamel.yaml: 0.17.32
+      ruamel.yaml.clib: 0.2.7
+      s3transfer: 0.6.1
+      scikit-image: 0.24.0
+      scikit-learn: 1.5.0
+      scipy: 1.11.1
+      sdcflows: 2.4.0
+      seaborn: 0.13.2
+      semver: 3.0.1
+      Send2Trash: 1.8.2
+      setuptools: 78.1.1
+      simplejson: 3.20.1
+      six: 1.16.0
+      sniffio: 1.3.0
+      soupsieve: 2.3.2.post1
+      SQLAlchemy: 1.3.24
+      stack-data: 0.6.2
+      svgutils: 0.3.4
+      templateflow: 24.2.2
+      terminado: 0.17.1
+      threadpoolctl: 3.6.0
+      tifffile: 2025.5.10
+      tinycss2: 1.2.1
+      tomli: 2.0.1
+      toolz: 0.12.0
+      tornado: 6.3.2
+      tqdm: 4.65.0
+      traitlets: 5.9.0
+      traits: 6.3.2
+      transforms3d: 0.4.2
+      trimesh: 3.22.5
+      typing-utils: 0.1.0
+      typing_extensions: 4.7.1
+      tzdata: 2023.3
+      unicodedata2: 15.0.0
+      urllib3: 1.26.19
+      voluptuous: 0.13.1
+      wcwidth: 0.2.6
+      webencodings: 0.5.1
+      websocket-client: 1.6.1
+      wheel: 0.40.0
+      wire: 1.0.0
+      wrapt: 1.17.2
+      wxnatpy: 0.4.0
+      wxPython: 4.1.1
+      xarray: 2023.7.0
+      xnat: 0.5.1
+      xvfbwrapper: 0.2.13
+      zipp: 3.19.1
+      zstandard: 0.23.0
+
+    Run command: run /ocean/projects/med250004p/bshresth/projects/data /ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs participant --num_ants_threads 1 --skip_bids_validator --n_cpus 1 --mem_gb 14 --pipeline_file /ocean/projects/med250004p/bshresth/projects/surface_pipelines/pipelines/pipeline5.yml --participant_label sub-NDARINV003RTV85
+
+    C-PAC version: 1.8.8.dev1
+
+    Copyright (C) 2022-2024 C-PAC Developers.
+    
+    This program comes with ABSOLUTELY NO WARRANTY. This is free software,
+    and you are welcome to redistribute it under certain conditions. For
+    details, see https://fcp-indi.github.io/docs/nightly/license or the COPYING and
+    COPYING.LESSER files included in the source code.
+
+    Setting maximum number of cores per participant to 1
+    Setting number of participants at once to 1
+    Setting OMP_NUM_THREADS to 1
+    Setting MKL_NUM_THREADS to 1
+    Setting ANTS/ITK thread usage to 1
+    Maximum potential number of cores that might be used during this run: 1
+    Random seed: 1
+
+250624-00:33:16,79 nipype.workflow INFO:
+	 Connecting pipeline blocks:
+	 - anatomical_init
+	 - non_local_means
+	   - T1w
+	     - desc-preproc_T1w
+	       - desc-reorient_T1w
+	       - T1w
+	 - n4_bias_correction
+	 - acpc_align_head
+	 - freesurfer_abcd_preproc
+	 - brain_mask_afni
+	   - brain_mask_fsl
+	   - brain_mask_niworkflows_ants
+	   - brain_mask_unet
+	   - brain_mask_freesurfer_abcd
+	   - brain_mask_freesurfer
+	   - brain_mask_freesurfer_fsl_tight
+	   - brain_mask_freesurfer_fsl_loose
+	 - brain_extraction
+	 - brain_mask_T2
+	 - brain_extraction_T2
+	 - register_ANTs_anat_to_template
+	   - register_FSL_anat_to_template
+	 - overwrite_transform_anat_to_template
+	 - warp_wholeheadT1_to_template
+	 - warp_T1mask_to_template
+	 - correct_restore_brain_intensity_abcd
+	 - tissue_seg_fsl_fast
+	   - tissue_seg_ants_prior
+	   - tissue_seg_freesurfer
+	 - tissue_seg_T1_template_based
+	 - coregistration_prep_vol
+	 - coregistration_prep_mean
+	 - register_ANTs_EPI_to_template
+	   - register_FSL_EPI_to_template
+	 - ICA_AROMA_ANTsreg
+	 - ICA_AROMA_FSLreg
+	 - ICA_AROMA_ANTsEPIreg
+	 - ICA_AROMA_FSLEPIreg
+	 - erode_mask_T1w
+	 - erode_mask_CSF
+	 - erode_mask_GM
+	 - erode_mask_WM
+	 - erode_mask_bold
+	 - erode_mask_boldCSF
+	 - erode_mask_boldGM
+	 - erode_mask_boldWM
+	 - nuisance_regressors_generation_T1w
+	   - desc-preproc_bold
+	     - desc-reorient_bold
+	 - ingress_regressors
+	 - warp_bold_mask_to_T1template
+	 - warp_deriv_mask_to_T1template
+	 - func_despike_template
+	 - warp_bold_mask_to_EPItemplate
+	 - warp_deriv_mask_to_EPItemplate
+	 - surface_postproc
+	 - surface_falff
+	 - surface_alff
+	 - surface_reho
+	 - surface_connectivity_matrix
+	 - timeseries_extraction_AVG
+	 - spatial_regression
+	 - alff_falff
+	 - reho
+	 - smooth_func_vmhc
+	 - warp_timeseries_to_sym_template
+	 - vmhc
+	 - qc_xcp
+	 
+250624-00:33:16,80 nipype.workflow INFO:
+	 Connecting anatomical_init...
+250624-00:33:16,82 nipype.workflow INFO:
+	 Connecting nlm_filtering...
+250624-00:33:16,83 nipype.workflow INFO:
+	 Connecting n4_bias_correction...
+250624-00:33:16,84 nipype.workflow INFO:
+	 Connecting acpc_alignment_head...
+250624-00:33:16,85 nipype.workflow INFO:
+	 Connecting freesurfer_abcd_preproc...
+250624-00:33:16,86 nipype.workflow INFO:
+	 Connecting brain_mask_afni...
+250624-00:33:16,87 nipype.workflow INFO:
+	 Connecting brain_mask_fsl...
+250624-00:33:16,88 nipype.workflow INFO:
+	 Connecting brain_mask_niworkflows_ants...
+250624-00:33:16,89 nipype.workflow INFO:
+	 Connecting brain_mask_unet...
+250624-00:33:16,89 nipype.workflow INFO:
+	 Connecting brain_mask_freesurfer_abcd...
+250624-00:33:16,90 nipype.workflow INFO:
+	 Connecting brain_mask_freesurfer...
+250624-00:33:16,91 nipype.workflow INFO:
+	 Connecting brain_mask_freesurfer_fsl_tight...
+250624-00:33:16,92 nipype.workflow INFO:
+	 Connecting brain_mask_freesurfer_fsl_loose...
+250624-00:33:16,111 nipype.workflow INFO:
+	 Connecting brain_extraction...
+250624-00:33:16,136 nipype.workflow INFO:
+	 Connecting brain_mask_T2...
+250624-00:33:16,137 nipype.workflow INFO:
+	 Connecting brain_extraction_T2...
+250624-00:33:16,138 nipype.workflow INFO:
+	 Connecting register_ANTs_anat_to_template...
+250624-00:33:16,139 nipype.workflow INFO:
+	 Connecting register_FSL_anat_to_template...
+250624-00:33:16,140 nipype.workflow INFO:
+	 Connecting overwrite_transform_anat_to_template...
+250624-00:33:16,141 nipype.workflow INFO:
+	 Connecting transform_whole_head_T1w_to_T1template...
+250624-00:33:16,142 nipype.workflow INFO:
+	 Connecting transform_T1mask_to_T1template...
+250624-00:33:16,143 nipype.workflow INFO:
+	 Connecting correct_restore_brain_intensity_abcd...
+250624-00:33:16,144 nipype.workflow INFO:
+	 Connecting tissue_seg_fsl_fast...
+250624-00:33:16,144 nipype.workflow INFO:
+	 Connecting tissue_seg_ants_prior...
+250624-00:33:16,145 nipype.workflow INFO:
+	 Connecting tissue_seg_freesurfer...
+250624-00:33:16,146 nipype.workflow INFO:
+	 Connecting tissue_seg_T1_template_based...
+250624-00:33:16,147 nipype.workflow INFO:
+	 Connecting coregistration_prep_vol...
+250624-00:33:16,148 nipype.workflow INFO:
+	 Connecting coregistration_prep_mean...
+250624-00:33:16,149 nipype.workflow INFO:
+	 Connecting register_ANTs_EPI_to_template...
+250624-00:33:16,150 nipype.workflow INFO:
+	 Connecting register_FSL_EPI_to_template...
+250624-00:33:16,151 nipype.workflow INFO:
+	 Connecting ICA_AROMA_ANTsreg...
+250624-00:33:16,152 nipype.workflow INFO:
+	 Connecting ICA_AROMA_FSLreg...
+250624-00:33:16,153 nipype.workflow INFO:
+	 Connecting ICA_AROMA_ANTsEPIreg...
+250624-00:33:16,154 nipype.workflow INFO:
+	 Connecting ICA_AROMA_FSLEPIreg...
+250624-00:33:16,155 nipype.workflow INFO:
+	 Connecting erode_mask_T1w...
+250624-00:33:16,156 nipype.workflow INFO:
+	 Connecting erode_mask_CSF...
+250624-00:33:16,157 nipype.workflow INFO:
+	 Connecting erode_mask_GM...
+250624-00:33:16,158 nipype.workflow INFO:
+	 Connecting erode_mask_WM...
+250624-00:33:16,159 nipype.workflow INFO:
+	 Connecting erode_mask_bold...
+250624-00:33:16,160 nipype.workflow INFO:
+	 Connecting erode_mask_boldCSF...
+250624-00:33:16,161 nipype.workflow INFO:
+	 Connecting erode_mask_boldGM...
+250624-00:33:16,162 nipype.workflow INFO:
+	 Connecting erode_mask_boldWM...
+250624-00:33:16,163 nipype.workflow INFO:
+	 Connecting nuisance_regressors_generation_T1w...
+250624-00:33:16,164 nipype.workflow INFO:
+	 Connecting ingress_regressors...
+250624-00:33:16,165 nipype.workflow INFO:
+	 Connecting transform_bold_mask_to_T1template...
+250624-00:33:16,166 nipype.workflow INFO:
+	 Connecting transform_deriv_mask_to_T1template...
+250624-00:33:16,167 nipype.workflow INFO:
+	 Connecting func_despike_template...
+250624-00:33:16,168 nipype.workflow INFO:
+	 Connecting transform_bold_mask_to_EPItemplate...
+250624-00:33:16,169 nipype.workflow INFO:
+	 Connecting transform_deriv_mask_to_EPItemplate...
+250624-00:33:16,170 nipype.workflow INFO:
+	 Connecting surface_postproc...
+250624-00:33:16,171 nipype.workflow INFO:
+	 Connecting surface_falff...
+250624-00:33:16,172 nipype.workflow INFO:
+	 Connecting surface_alff...
+250624-00:33:16,173 nipype.workflow INFO:
+	 Connecting surface_reho...
+250624-00:33:16,174 nipype.workflow INFO:
+	 Connecting surface_connectivity_matrix...
+250624-00:33:16,175 nipype.workflow INFO:
+	 Connecting timeseries_extraction_AVG...
+250624-00:33:16,176 nipype.workflow INFO:
+	 Connecting spatial_regression...
+250624-00:33:16,177 nipype.workflow INFO:
+	 Connecting alff_falff...
+250624-00:33:16,178 nipype.workflow INFO:
+	 Connecting ReHo...
+250624-00:33:16,179 nipype.workflow INFO:
+	 Connecting smooth_func_vmhc...
+250624-00:33:16,180 nipype.workflow INFO:
+	 Connecting transform_timeseries_to_sym_template...
+250624-00:33:16,181 nipype.workflow INFO:
+	 Connecting vmhc...
+250624-00:33:16,182 nipype.workflow INFO:
+	 Connecting qc_xcp...
+250624-00:33:16,455 nipype.workflow INFO:
+	 Workflow cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1 settings: ['check', 'execution', 'logging', 'monitoring']
+250624-00:33:16,644 nipype.workflow INFO:
+	 Running serially.
+250624-00:33:16,654 nipype.workflow INFO:
+	 [Node] Setting-up "cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1.id_string_desc-preproc-1_T1w_103" in "/ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/working/pipeline_pipeline5/cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1/id_string_desc-preproc-1_T1w_103".
+250624-00:33:16,671 nipype.workflow INFO:
+	 [Node] Cached "cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1.id_string_desc-preproc-1_T1w_103" - collecting precomputed outputs
+250624-00:33:16,672 nipype.workflow INFO:
+	 [Node] "cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1.id_string_desc-preproc-1_T1w_103" found cached.
+250624-00:33:16,683 nipype.workflow INFO:
+	 [Node] Setting-up "cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1.id_string_desc-preproc-2_T1w_106" in "/ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/working/pipeline_pipeline5/cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1/id_string_desc-preproc-2_T1w_106".
+250624-00:33:16,702 nipype.workflow INFO:
+	 [Node] Cached "cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1.id_string_desc-preproc-2_T1w_106" - collecting precomputed outputs
+250624-00:33:16,703 nipype.workflow INFO:
+	 [Node] "cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1.id_string_desc-preproc-2_T1w_106" found cached.
+250624-00:33:16,715 nipype.workflow INFO:
+	 [Node] Setting-up "cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1.id_string_desc-head-1_T1w_105" in "/ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/working/pipeline_pipeline5/cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1/id_string_desc-head-1_T1w_105".
+250624-00:33:16,725 nipype.workflow INFO:
+	 [Node] Cached "cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1.id_string_desc-head-1_T1w_105" - collecting precomputed outputs
+250624-00:33:16,725 nipype.workflow INFO:
+	 [Node] "cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1.id_string_desc-head-1_T1w_105" found cached.
+250624-00:33:16,737 nipype.workflow INFO:
+	 [Node] Setting-up "cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1.id_string_desc-head-2_T1w_108" in "/ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/working/pipeline_pipeline5/cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1/id_string_desc-head-2_T1w_108".
+250624-00:33:16,751 nipype.workflow INFO:
+	 [Node] Cached "cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1.id_string_desc-head-2_T1w_108" - collecting precomputed outputs
+250624-00:33:16,752 nipype.workflow INFO:
+	 [Node] "cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1.id_string_desc-head-2_T1w_108" found cached.
+250624-00:33:16,764 nipype.workflow INFO:
+	 [Node] Setting-up "cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1.id_string_space-T1w_desc-brain-1_mask_78" in "/ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/working/pipeline_pipeline5/cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1/id_string_space-T1w_desc-brain-1_mask_78".
+250624-00:33:16,797 nipype.workflow INFO:
+	 [Node] Cached "cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1.id_string_space-T1w_desc-brain-1_mask_78" - collecting precomputed outputs
+250624-00:33:16,798 nipype.workflow INFO:
+	 [Node] "cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1.id_string_space-T1w_desc-brain-1_mask_78" found cached.
+250624-00:33:16,809 nipype.workflow INFO:
+	 [Node] Setting-up "cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1.id_string_space-T1w_desc-brain-2_mask_82" in "/ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/working/pipeline_pipeline5/cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1/id_string_space-T1w_desc-brain-2_mask_82".
+250624-00:33:16,827 nipype.workflow INFO:
+	 [Node] Cached "cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1.id_string_space-T1w_desc-brain-2_mask_82" - collecting precomputed outputs
+250624-00:33:16,828 nipype.workflow INFO:
+	 [Node] "cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1.id_string_space-T1w_desc-brain-2_mask_82" found cached.
+250624-00:33:16,839 nipype.workflow INFO:
+	 [Node] Setting-up "cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1.gather_fs_pipeline-fs_raw-average_dir.check_for_s3" in "/ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/working/pipeline_pipeline5/cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1/gather_fs_pipeline-fs_raw-average_dir/check_for_s3".
+250624-00:33:16,850 nipype.workflow INFO:
+	 [Node] Executing "check_for_s3" <CPAC.utils.interfaces.function.function.Function>
+250624-00:33:17,134 nipype.workflow INFO:
+	 [Node] Finished "check_for_s3", elapsed time 0.005051s.
+250624-00:33:17,152 nipype.workflow INFO:
+	 [Node] Setting-up "cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1.gather_fs_pipeline-fs_subcortical-seg_dir.check_for_s3" in "/ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/working/pipeline_pipeline5/cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1/gather_fs_pipeline-fs_subcortical-seg_dir/check_for_s3".
+250624-00:33:17,162 nipype.workflow INFO:
+	 [Node] Executing "check_for_s3" <CPAC.utils.interfaces.function.function.Function>
+250624-00:33:17,442 nipype.workflow INFO:
+	 [Node] Finished "check_for_s3", elapsed time 0.004051s.
+250624-00:33:17,464 nipype.workflow INFO:
+	 [Node] Setting-up "cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1.gather_fs_pipeline-fs_brainmask_dir.check_for_s3" in "/ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/working/pipeline_pipeline5/cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1/gather_fs_pipeline-fs_brainmask_dir/check_for_s3".
+250624-00:33:17,497 nipype.workflow INFO:
+	 [Node] Executing "check_for_s3" <CPAC.utils.interfaces.function.function.Function>
+250624-00:33:17,773 nipype.workflow INFO:
+	 [Node] Finished "check_for_s3", elapsed time 0.003981s.
+250624-00:33:17,789 nipype.workflow INFO:
+	 [Node] Setting-up "cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1.gather_fs_pipeline-fs_wmparc_dir.check_for_s3" in "/ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/working/pipeline_pipeline5/cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1/gather_fs_pipeline-fs_wmparc_dir/check_for_s3".
+250624-00:33:17,795 nipype.workflow INFO:
+	 [Node] Executing "check_for_s3" <CPAC.utils.interfaces.function.function.Function>
+250624-00:33:18,83 nipype.workflow INFO:
+	 [Node] Finished "check_for_s3", elapsed time 0.003876s.
+250624-00:33:18,100 nipype.workflow INFO:
+	 [Node] Setting-up "cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1.gather_fs_pipeline-fs_T1_dir.check_for_s3" in "/ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/working/pipeline_pipeline5/cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1/gather_fs_pipeline-fs_T1_dir/check_for_s3".
+250624-00:33:18,136 nipype.workflow INFO:
+	 [Node] Executing "check_for_s3" <CPAC.utils.interfaces.function.function.Function>
+250624-00:33:18,431 nipype.workflow INFO:
+	 [Node] Finished "check_for_s3", elapsed time 0.004062s.
+250624-00:33:18,449 nipype.workflow INFO:
+	 [Node] Setting-up "cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1.gather_surface-parcellation-atlas.check_for_s3" in "/ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/working/pipeline_pipeline5/cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1/gather_surface-parcellation-atlas/check_for_s3".
+250624-00:33:18,483 nipype.workflow INFO:
+	 [Node] Executing "check_for_s3" <CPAC.utils.interfaces.function.function.Function>
+pixdim[1,2,3] should be non-zero; setting 0 dims to 1
+250624-00:33:18,930 nipype.workflow INFO:
+	 [Node] Finished "check_for_s3", elapsed time 0.193374s.
+250624-00:33:18,947 nipype.workflow INFO:
+	 [Node] Setting-up "cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1.anat_T1w_gather_sub-NDARINV003RTV85_ses-baselineYear1Arm1.check_for_s3" in "/ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/working/pipeline_pipeline5/cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1/anat_T1w_gather_sub-NDARINV003RTV85_ses-baselineYear1Arm1/check_for_s3".
+250624-00:33:18,965 nipype.workflow INFO:
+	 [Node] Executing "check_for_s3" <CPAC.utils.interfaces.function.function.Function>
+250624-00:33:19,265 nipype.workflow INFO:
+	 [Node] Finished "check_for_s3", elapsed time 0.047648s.
+250624-00:33:19,293 nipype.workflow INFO:
+	 [Node] Setting-up "cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1.gather_fs_pipeline-fs_xfm_dir.check_for_s3" in "/ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/working/pipeline_pipeline5/cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1/gather_fs_pipeline-fs_xfm_dir/check_for_s3".
+250624-00:33:19,321 nipype.workflow INFO:
+	 [Node] Executing "check_for_s3" <CPAC.utils.interfaces.function.function.Function>
+250624-00:33:19,595 nipype.workflow INFO:
+	 [Node] Finished "check_for_s3", elapsed time 0.003853s.
+250624-00:33:19,612 nipype.workflow INFO:
+	 [Node] Setting-up "cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1.gather_freesurfer_dir.check_for_s3" in "/ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/working/pipeline_pipeline5/cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1/gather_freesurfer_dir/check_for_s3".
+250624-00:33:19,631 nipype.workflow INFO:
+	 [Node] Executing "check_for_s3" <CPAC.utils.interfaces.function.function.Function>
+250624-00:33:19,907 nipype.workflow INFO:
+	 [Node] Finished "check_for_s3", elapsed time 0.003938s.
+250624-00:33:19,923 nipype.workflow INFO:
+	 [Node] Setting-up "cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1.gather_T1w-ACPC-template.check_for_s3" in "/ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/working/pipeline_pipeline5/cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1/gather_T1w-ACPC-template/check_for_s3".
+250624-00:33:19,995 nipype.workflow INFO:
+	 [Node] Executing "check_for_s3" <CPAC.utils.interfaces.function.function.Function>
+250624-00:33:20,381 nipype.workflow INFO:
+	 [Node] Finished "check_for_s3", elapsed time 0.134269s.
+250624-00:33:20,406 nipype.workflow INFO:
+	 [Node] Setting-up "cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1.gather_T1w-brain-template-mask-ccs.check_for_s3" in "/ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/working/pipeline_pipeline5/cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1/gather_T1w-brain-template-mask-ccs/check_for_s3".
+250624-00:33:20,436 nipype.workflow INFO:
+	 [Node] Executing "check_for_s3" <CPAC.utils.interfaces.function.function.Function>
+250624-00:33:20,714 nipype.workflow INFO:
+	 [Node] Finished "check_for_s3", elapsed time 0.003751s.
+250624-00:33:20,715 nipype.workflow WARNING:
+	 Storing result file without outputs
+250624-00:33:20,731 nipype.workflow WARNING:
+	 [Node] Error on "cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1.gather_T1w-brain-template-mask-ccs.check_for_s3" (/ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/working/pipeline_pipeline5/cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1/gather_T1w-brain-template-mask-ccs/check_for_s3)
+250624-00:33:20,734 nipype.workflow ERROR:
+	 Node check_for_s3 failed to run on host r225.ib.bridges2.psc.edu.
+250624-00:33:20,735 nipype.workflow ERROR:
+	 Saving crash info to /ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/log/crash-20250624-003320-bshresth-check_for_s3-e5d37314-edc8-4680-af4b-6e9c6ff5e28e.txt
+Traceback (most recent call last):
+  File "/usr/share/fsl/6.0/lib/python3.10/site-packages/nipype/pipeline/plugins/linear.py", line 47, in run
+    node.run(updatehash=updatehash)
+  File "/code/CPAC/pipeline/nipype_pipeline_engine/engine.py", line 474, in run
+    return super().run(updatehash)
+  File "/usr/share/fsl/6.0/lib/python3.10/site-packages/nipype/pipeline/engine/nodes.py", line 527, in run
+    result = self._run_interface(execute=True)
+  File "/usr/share/fsl/6.0/lib/python3.10/site-packages/nipype/pipeline/engine/nodes.py", line 645, in _run_interface
+    return self._run_command(execute)
+  File "/usr/share/fsl/6.0/lib/python3.10/site-packages/nipype/pipeline/engine/nodes.py", line 771, in _run_command
+    raise NodeExecutionError(msg)
+nipype.pipeline.engine.nodes.NodeExecutionError: Exception raised while executing Node check_for_s3.
+
+Traceback:
+	Traceback (most recent call last):
+	  File "/code/CPAC/pipeline/nipype_pipeline_engine/monkeypatch.py", line 40, in run
+	    runtime = self._run_interface(runtime)
+	  File "/code/CPAC/utils/interfaces/function/function.py", line 331, in _run_interface
+	    out = function_handle(**args)
+	  File "<string>", line 97, in check_for_s3
+	NameError: name '__file__' is not defined
+
+
+250624-00:33:20,746 nipype.workflow INFO:
+	 [Node] Setting-up "cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1.func_ingress_sub-NDARINV003RTV85_ses-baselineYear1Arm1.check_func_scan" in "/ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/working/pipeline_pipeline5/cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1/func_ingress_sub-NDARINV003RTV85_ses-baselineYear1Arm1/_scan_rest_run-01/check_func_scan".
+250624-00:33:20,776 nipype.workflow INFO:
+	 [Node] Executing "check_func_scan" <CPAC.utils.interfaces.function.function.Function>
+250624-00:33:21,56 nipype.workflow INFO:
+	 [Node] Finished "check_func_scan", elapsed time 0.001454s.
+250624-00:33:21,73 nipype.workflow INFO:
+	 [Node] Setting-up "cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1.func_ingress_sub-NDARINV003RTV85_ses-baselineYear1Arm1.select_scan_params" in "/ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/working/pipeline_pipeline5/cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1/func_ingress_sub-NDARINV003RTV85_ses-baselineYear1Arm1/_scan_rest_run-01/select_scan_params".
+250624-00:33:21,91 nipype.workflow INFO:
+	 [Node] Executing "select_scan_params" <CPAC.utils.interfaces.function.function.Function>
+250624-00:33:21,365 nipype.workflow INFO:
+	 [Node] Finished "select_scan_params", elapsed time 0.001103s.
+250624-00:33:21,384 nipype.workflow INFO:
+	 [Node] Setting-up "cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1.func_ingress_sub-NDARINV003RTV85_ses-baselineYear1Arm1.selectrest" in "/ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/working/pipeline_pipeline5/cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1/func_ingress_sub-NDARINV003RTV85_ses-baselineYear1Arm1/_scan_rest_run-01/selectrest".
+250624-00:33:21,400 nipype.workflow INFO:
+	 [Node] Executing "selectrest" <CPAC.utils.interfaces.function.function.Function>
+250624-00:33:21,674 nipype.workflow INFO:
+	 [Node] Finished "selectrest", elapsed time 0.001193s.
+250624-00:33:21,691 nipype.workflow INFO:
+	 [Node] Setting-up "cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1.func_ingress_sub-NDARINV003RTV85_ses-baselineYear1Arm1.check_func_scan" in "/ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/working/pipeline_pipeline5/cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1/func_ingress_sub-NDARINV003RTV85_ses-baselineYear1Arm1/_scan_rest_run-02/check_func_scan".
+250624-00:33:21,709 nipype.workflow INFO:
+	 [Node] Executing "check_func_scan" <CPAC.utils.interfaces.function.function.Function>
+250624-00:33:21,994 nipype.workflow INFO:
+	 [Node] Finished "check_func_scan", elapsed time 0.0014s.
+250624-00:33:22,22 nipype.workflow INFO:
+	 [Node] Setting-up "cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1.func_ingress_sub-NDARINV003RTV85_ses-baselineYear1Arm1.select_scan_params" in "/ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/working/pipeline_pipeline5/cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1/func_ingress_sub-NDARINV003RTV85_ses-baselineYear1Arm1/_scan_rest_run-02/select_scan_params".
+250624-00:33:22,30 nipype.workflow INFO:
+	 [Node] Executing "select_scan_params" <CPAC.utils.interfaces.function.function.Function>
+250624-00:33:22,334 nipype.workflow INFO:
+	 [Node] Finished "select_scan_params", elapsed time 0.001113s.
+250624-00:33:22,352 nipype.workflow INFO:
+	 [Node] Setting-up "cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1.func_ingress_sub-NDARINV003RTV85_ses-baselineYear1Arm1.selectrest" in "/ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/working/pipeline_pipeline5/cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1/func_ingress_sub-NDARINV003RTV85_ses-baselineYear1Arm1/_scan_rest_run-02/selectrest".
+250624-00:33:22,371 nipype.workflow INFO:
+	 [Node] Executing "selectrest" <CPAC.utils.interfaces.function.function.Function>
+250624-00:33:22,656 nipype.workflow INFO:
+	 [Node] Finished "selectrest", elapsed time 0.001077s.
+250624-00:33:22,673 nipype.workflow INFO:
+	 [Node] Setting-up "cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1.func_ingress_sub-NDARINV003RTV85_ses-baselineYear1Arm1.check_func_scan" in "/ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/working/pipeline_pipeline5/cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1/func_ingress_sub-NDARINV003RTV85_ses-baselineYear1Arm1/_scan_rest_run-03/check_func_scan".
+250624-00:33:22,689 nipype.workflow INFO:
+	 [Node] Executing "check_func_scan" <CPAC.utils.interfaces.function.function.Function>
+250624-00:33:22,962 nipype.workflow INFO:
+	 [Node] Finished "check_func_scan", elapsed time 0.001322s.
+250624-00:33:22,979 nipype.workflow INFO:
+	 [Node] Setting-up "cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1.func_ingress_sub-NDARINV003RTV85_ses-baselineYear1Arm1.select_scan_params" in "/ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/working/pipeline_pipeline5/cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1/func_ingress_sub-NDARINV003RTV85_ses-baselineYear1Arm1/_scan_rest_run-03/select_scan_params".
+250624-00:33:22,997 nipype.workflow INFO:
+	 [Node] Executing "select_scan_params" <CPAC.utils.interfaces.function.function.Function>
+250624-00:33:23,295 nipype.workflow INFO:
+	 [Node] Finished "select_scan_params", elapsed time 0.001295s.
+250624-00:33:23,338 nipype.workflow INFO:
+	 [Node] Setting-up "cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1.func_ingress_sub-NDARINV003RTV85_ses-baselineYear1Arm1.selectrest" in "/ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/working/pipeline_pipeline5/cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1/func_ingress_sub-NDARINV003RTV85_ses-baselineYear1Arm1/_scan_rest_run-03/selectrest".
+250624-00:33:23,361 nipype.workflow INFO:
+	 [Node] Executing "selectrest" <CPAC.utils.interfaces.function.function.Function>
+250624-00:33:23,632 nipype.workflow INFO:
+	 [Node] Finished "selectrest", elapsed time 0.001001s.
+250624-00:33:23,664 nipype.workflow INFO:
+	 [Node] Setting-up "cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1.json_desc-preproc-1_T1w_103" in "/ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/working/pipeline_pipeline5/cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1/json_desc-preproc-1_T1w_103".
+250624-00:33:23,700 nipype.workflow INFO:
+	 [Node] Executing "json_desc-preproc-1_T1w_103" <CPAC.utils.interfaces.function.function.Function>
+250624-00:33:23,979 nipype.workflow INFO:
+	 [Node] Finished "json_desc-preproc-1_T1w_103", elapsed time 0.003987s.
+250624-00:33:24,3 nipype.workflow INFO:
+	 [Node] Setting-up "cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1.json_desc-preproc-2_T1w_106" in "/ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/working/pipeline_pipeline5/cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1/json_desc-preproc-2_T1w_106".
+250624-00:33:24,39 nipype.workflow INFO:
+	 [Node] Executing "json_desc-preproc-2_T1w_106" <CPAC.utils.interfaces.function.function.Function>
+250624-00:33:24,318 nipype.workflow INFO:
+	 [Node] Finished "json_desc-preproc-2_T1w_106", elapsed time 0.004328s.
+250624-00:33:24,343 nipype.workflow INFO:
+	 [Node] Setting-up "cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1.json_desc-head-1_T1w_105" in "/ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/working/pipeline_pipeline5/cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1/json_desc-head-1_T1w_105".
+250624-00:33:24,386 nipype.workflow INFO:
+	 [Node] Executing "json_desc-head-1_T1w_105" <CPAC.utils.interfaces.function.function.Function>
+250624-00:33:24,663 nipype.workflow INFO:
+	 [Node] Finished "json_desc-head-1_T1w_105", elapsed time 0.003715s.
+250624-00:33:24,687 nipype.workflow INFO:
+	 [Node] Setting-up "cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1.json_desc-head-2_T1w_108" in "/ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/working/pipeline_pipeline5/cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1/json_desc-head-2_T1w_108".
+250624-00:33:24,708 nipype.workflow INFO:
+	 [Node] Executing "json_desc-head-2_T1w_108" <CPAC.utils.interfaces.function.function.Function>
+250624-00:33:24,985 nipype.workflow INFO:
+	 [Node] Finished "json_desc-head-2_T1w_108", elapsed time 0.003881s.
+250624-00:33:25,22 nipype.workflow INFO:
+	 [Node] Setting-up "cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1.json_space-T1w_desc-brain-1_mask_78" in "/ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/working/pipeline_pipeline5/cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1/json_space-T1w_desc-brain-1_mask_78".
+250624-00:33:25,62 nipype.workflow INFO:
+	 [Node] Executing "json_space-T1w_desc-brain-1_mask_78" <CPAC.utils.interfaces.function.function.Function>
+250624-00:33:25,349 nipype.workflow INFO:
+	 [Node] Finished "json_space-T1w_desc-brain-1_mask_78", elapsed time 0.003508s.
+250624-00:33:25,373 nipype.workflow INFO:
+	 [Node] Setting-up "cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1.json_space-T1w_desc-brain-2_mask_82" in "/ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/working/pipeline_pipeline5/cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1/json_space-T1w_desc-brain-2_mask_82".
+250624-00:33:25,407 nipype.workflow INFO:
+	 [Node] Executing "json_space-T1w_desc-brain-2_mask_82" <CPAC.utils.interfaces.function.function.Function>
+250624-00:33:25,683 nipype.workflow INFO:
+	 [Node] Finished "json_space-T1w_desc-brain-2_mask_82", elapsed time 0.003764s.
+250624-00:33:25,708 nipype.workflow INFO:
+	 [Node] Setting-up "cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1.reorient_mgz_pipeline-fs_raw-average" in "/ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/working/pipeline_pipeline5/cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1/reorient_mgz_pipeline-fs_raw-average".
+250624-00:33:25,753 nipype.workflow INFO:
+	 [Node] Executing "reorient_mgz_pipeline-fs_raw-average" <CPAC.utils.interfaces.function.function.Function>
+mri_convert.bin /ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/freesurfer/sub-NDARINV003RTV85/mri/rawavg.mgz /ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/freesurfer/sub-NDARINV003RTV85/mri/rawavg_reoriented.mgz --out_orientation LAS 
+$Id: mri_convert.c,v 1.226 2016/02/26 16:15:24 mreuter Exp $
+reading from /ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/freesurfer/sub-NDARINV003RTV85/mri/rawavg.mgz...
+TR=0.00, TE=0.00, TI=0.00, flip angle=0.00
+i_ras = (-1, 0, 0)
+j_ras = (0, 1, 0)
+k_ras = (0, 0, 1)
+Setting output orientation to LAS
+writing to /ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/freesurfer/sub-NDARINV003RTV85/mri/rawavg_reoriented.mgz...
+250624-00:33:35,185 nipype.workflow INFO:
+	 [Node] Finished "reorient_mgz_pipeline-fs_raw-average", elapsed time 9.176137s.
+250624-00:33:35,203 nipype.workflow INFO:
+	 [Node] Setting-up "cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1.reorient_mgz_pipeline-fs_subcortical-seg" in "/ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/working/pipeline_pipeline5/cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1/reorient_mgz_pipeline-fs_subcortical-seg".
+250624-00:33:35,220 nipype.workflow INFO:
+	 [Node] Executing "reorient_mgz_pipeline-fs_subcortical-seg" <CPAC.utils.interfaces.function.function.Function>
+mri_convert.bin /ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/freesurfer/sub-NDARINV003RTV85/mri/aseg.mgz /ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/freesurfer/sub-NDARINV003RTV85/mri/aseg_reoriented.mgz --out_orientation LAS 
+$Id: mri_convert.c,v 1.226 2016/02/26 16:15:24 mreuter Exp $
+reading from /ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/freesurfer/sub-NDARINV003RTV85/mri/aseg.mgz...
+TR=0.00, TE=0.00, TI=0.00, flip angle=0.00
+i_ras = (-1, 0, 0)
+j_ras = (0, 0, -1)
+k_ras = (0, 1, 0)
+Setting output orientation to LAS
+Reslicing using trilinear interpolation 
+writing to /ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/freesurfer/sub-NDARINV003RTV85/mri/aseg_reoriented.mgz...
+250624-00:33:38,615 nipype.workflow INFO:
+	 [Node] Finished "reorient_mgz_pipeline-fs_subcortical-seg", elapsed time 3.121362s.
+250624-00:33:38,633 nipype.workflow INFO:
+	 [Node] Setting-up "cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1.reorient_mgz_pipeline-fs_brainmask" in "/ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/working/pipeline_pipeline5/cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1/reorient_mgz_pipeline-fs_brainmask".
+250624-00:33:38,682 nipype.workflow INFO:
+	 [Node] Executing "reorient_mgz_pipeline-fs_brainmask" <CPAC.utils.interfaces.function.function.Function>
+mri_convert.bin /ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/freesurfer/sub-NDARINV003RTV85/mri/brainmask.mgz /ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/freesurfer/sub-NDARINV003RTV85/mri/brainmask_reoriented.mgz --out_orientation LAS 
+$Id: mri_convert.c,v 1.226 2016/02/26 16:15:24 mreuter Exp $
+reading from /ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/freesurfer/sub-NDARINV003RTV85/mri/brainmask.mgz...
+TR=0.00, TE=0.00, TI=0.00, flip angle=0.00
+i_ras = (-1, 0, 0)
+j_ras = (0, 0, -1)
+k_ras = (0, 1, 0)
+Setting output orientation to LAS
+Reslicing using trilinear interpolation 
+writing to /ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/freesurfer/sub-NDARINV003RTV85/mri/brainmask_reoriented.mgz...
+250624-00:33:40,790 nipype.workflow INFO:
+	 [Node] Finished "reorient_mgz_pipeline-fs_brainmask", elapsed time 1.8555030000000001s.
+250624-00:33:40,815 nipype.workflow INFO:
+	 [Node] Setting-up "cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1.reorient_mgz_pipeline-fs_wmparc" in "/ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/working/pipeline_pipeline5/cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1/reorient_mgz_pipeline-fs_wmparc".
+250624-00:33:40,849 nipype.workflow INFO:
+	 [Node] Executing "reorient_mgz_pipeline-fs_wmparc" <CPAC.utils.interfaces.function.function.Function>
+mri_convert.bin /ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/freesurfer/sub-NDARINV003RTV85/mri/wmparc.mgz /ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/freesurfer/sub-NDARINV003RTV85/mri/wmparc_reoriented.mgz --out_orientation LAS 
+$Id: mri_convert.c,v 1.226 2016/02/26 16:15:24 mreuter Exp $
+reading from /ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/freesurfer/sub-NDARINV003RTV85/mri/wmparc.mgz...
+TR=0.00, TE=0.00, TI=0.00, flip angle=0.00
+i_ras = (-1, 0, 0)
+j_ras = (0, 0, -1)
+k_ras = (0, 1, 0)
+Setting output orientation to LAS
+Reslicing using trilinear interpolation 
+writing to /ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/freesurfer/sub-NDARINV003RTV85/mri/wmparc_reoriented.mgz...
+250624-00:33:44,177 nipype.workflow INFO:
+	 [Node] Finished "reorient_mgz_pipeline-fs_wmparc", elapsed time 3.053717s.
+250624-00:33:44,195 nipype.workflow INFO:
+	 [Node] Setting-up "cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1.reorient_mgz_pipeline-fs_T1" in "/ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/working/pipeline_pipeline5/cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1/reorient_mgz_pipeline-fs_T1".
+250624-00:33:44,201 nipype.workflow INFO:
+	 [Node] Executing "reorient_mgz_pipeline-fs_T1" <CPAC.utils.interfaces.function.function.Function>
+mri_convert.bin /ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/freesurfer/sub-NDARINV003RTV85/mri/T1.mgz /ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/freesurfer/sub-NDARINV003RTV85/mri/T1_reoriented.mgz --out_orientation LAS 
+$Id: mri_convert.c,v 1.226 2016/02/26 16:15:24 mreuter Exp $
+reading from /ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/freesurfer/sub-NDARINV003RTV85/mri/T1.mgz...
+TR=0.00, TE=0.00, TI=0.00, flip angle=0.00
+i_ras = (-1, 0, 0)
+j_ras = (0, 0, -1)
+k_ras = (0, 1, 0)
+Setting output orientation to LAS
+Reslicing using trilinear interpolation 
+writing to /ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/freesurfer/sub-NDARINV003RTV85/mri/T1_reoriented.mgz...
+250624-00:33:46,432 nipype.workflow INFO:
+	 [Node] Finished "reorient_mgz_pipeline-fs_T1", elapsed time 1.979003s.
+250624-00:33:46,440 nipype.workflow INFO:
+	 [Node] Setting-up "cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1.reorient_surface-parcellation-atlas" in "/ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/working/pipeline_pipeline5/cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1/reorient_surface-parcellation-atlas".
+250624-00:33:46,461 nipype.workflow INFO:
+	 [Node] Executing "reorient_surface-parcellation-atlas" <nipype.interfaces.afni.utils.Resample>
+250624-00:33:46,802 nipype.interface INFO:
+	 stderr 2025-06-24T00:33:46.802647:[7m*+ WARNING:[0m NO spatial transform (neither qform nor sform), in NIfTI file '/ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/working/pipeline_pipeline5/cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1/reorient_surface-parcellation-atlas/Schaefer2018_200Parcels_17Networks_order.dlabel.nii'
+250624-00:34:41,20 nipype.workflow INFO:
+	 [Node] Finished "reorient_surface-parcellation-atlas", elapsed time 54.287397s.
+250624-00:34:41,38 nipype.workflow INFO:
+	 [Node] Setting-up "cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1.anat_deoblique_refit_0" in "/ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/working/pipeline_pipeline5/cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1/anat_deoblique_refit_0".
+250624-00:34:42,17 nipype.workflow INFO:
+	 [Node] Executing "anat_deoblique_refit_0" <nipype.interfaces.afni.utils.Refit>
+250624-00:34:42,321 nipype.interface INFO:
+	 stderr 2025-06-24T00:34:42.321598:++ 3drefit: AFNI version=AFNI_23.3.09 (May  8 2025) [64-bit]
+250624-00:34:42,322 nipype.interface INFO:
+	 stderr 2025-06-24T00:34:42.321598:++ Authored by: RW Cox
+250624-00:34:42,325 nipype.interface INFO:
+	 stderr 2025-06-24T00:34:42.325251:++ Processing AFNI dataset /ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/working/pipeline_pipeline5/cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1/anat_deoblique_refit_0/sub-NDARINV003RTV85_ses-baselineYear1Arm1_run-01_T1w.nii
+250624-00:34:42,326 nipype.interface INFO:
+	 stderr 2025-06-24T00:34:42.326050: + deoblique
+250624-00:34:42,326 nipype.interface INFO:
+	 stderr 2025-06-24T00:34:42.326050: + loading and re-writing dataset /ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/working/pipeline_pipeline5/cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1/anat_deoblique_refit_0/sub-NDARINV003RTV85_ses-baselineYear1Arm1_run-01_T1w.nii (/ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/working/pipeline_pipeline5/cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1/anat_deoblique_refit_0/sub-NDARINV003RTV85_ses-baselineYear1Arm1_run-01_T1w.nii in NIFTI storage)
+250624-00:34:42,476 nipype.interface INFO:
+	 stderr 2025-06-24T00:34:42.476682:++ 3drefit processed 1 datasets
+250624-00:34:42,614 nipype.workflow INFO:
+	 [Node] Finished "anat_deoblique_refit_0", elapsed time 0.340647s.
+250624-00:34:42,641 nipype.workflow INFO:
+	 [Node] Setting-up "cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1.func_ingress_sub-NDARINV003RTV85_ses-baselineYear1Arm1.s3_scan_params" in "/ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/working/pipeline_pipeline5/cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1/func_ingress_sub-NDARINV003RTV85_ses-baselineYear1Arm1/_scan_rest_run-01/s3_scan_params".
+250624-00:34:42,663 nipype.workflow INFO:
+	 [Node] Executing "s3_scan_params" <CPAC.utils.interfaces.function.function.Function>
+250624-00:34:42,941 nipype.workflow INFO:
+	 [Node] Finished "s3_scan_params", elapsed time 0.004082s.
+250624-00:34:42,967 nipype.workflow INFO:
+	 [Node] Setting-up "cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1.func_ingress_sub-NDARINV003RTV85_ses-baselineYear1Arm1.check_for_s3" in "/ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/working/pipeline_pipeline5/cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1/func_ingress_sub-NDARINV003RTV85_ses-baselineYear1Arm1/_scan_rest_run-01/check_for_s3".
+250624-00:34:43,12 nipype.workflow INFO:
+	 [Node] Executing "check_for_s3" <CPAC.utils.interfaces.function.function.Function>
+250624-00:34:43,289 nipype.workflow INFO:
+	 [Node] Finished "check_for_s3", elapsed time 0.0064s.
+250624-00:34:43,321 nipype.workflow INFO:
+	 [Node] Setting-up "cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1.func_ingress_sub-NDARINV003RTV85_ses-baselineYear1Arm1.s3_scan_params" in "/ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/working/pipeline_pipeline5/cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1/func_ingress_sub-NDARINV003RTV85_ses-baselineYear1Arm1/_scan_rest_run-02/s3_scan_params".
+250624-00:34:43,347 nipype.workflow INFO:
+	 [Node] Executing "s3_scan_params" <CPAC.utils.interfaces.function.function.Function>
+250624-00:34:43,637 nipype.workflow INFO:
+	 [Node] Finished "s3_scan_params", elapsed time 0.003803s.
+250624-00:34:43,654 nipype.workflow INFO:
+	 [Node] Setting-up "cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1.func_ingress_sub-NDARINV003RTV85_ses-baselineYear1Arm1.check_for_s3" in "/ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/working/pipeline_pipeline5/cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1/func_ingress_sub-NDARINV003RTV85_ses-baselineYear1Arm1/_scan_rest_run-02/check_for_s3".
+250624-00:34:43,667 nipype.workflow INFO:
+	 [Node] Executing "check_for_s3" <CPAC.utils.interfaces.function.function.Function>
+250624-00:34:43,956 nipype.workflow INFO:
+	 [Node] Finished "check_for_s3", elapsed time 0.005963s.
+250624-00:34:43,975 nipype.workflow INFO:
+	 [Node] Setting-up "cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1.func_ingress_sub-NDARINV003RTV85_ses-baselineYear1Arm1.s3_scan_params" in "/ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/working/pipeline_pipeline5/cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1/func_ingress_sub-NDARINV003RTV85_ses-baselineYear1Arm1/_scan_rest_run-03/s3_scan_params".
+250624-00:34:43,982 nipype.workflow INFO:
+	 [Node] Executing "s3_scan_params" <CPAC.utils.interfaces.function.function.Function>
+250624-00:34:44,256 nipype.workflow INFO:
+	 [Node] Finished "s3_scan_params", elapsed time 0.003748s.
+250624-00:34:44,274 nipype.workflow INFO:
+	 [Node] Setting-up "cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1.func_ingress_sub-NDARINV003RTV85_ses-baselineYear1Arm1.check_for_s3" in "/ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/working/pipeline_pipeline5/cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1/func_ingress_sub-NDARINV003RTV85_ses-baselineYear1Arm1/_scan_rest_run-03/check_for_s3".
+250624-00:34:44,294 nipype.workflow INFO:
+	 [Node] Executing "check_for_s3" <CPAC.utils.interfaces.function.function.Function>
+250624-00:34:44,586 nipype.workflow INFO:
+	 [Node] Finished "check_for_s3", elapsed time 0.005984s.
+250624-00:34:44,600 nipype.workflow INFO:
+	 [Node] Setting-up "cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1.fs_brain_mask_to_native" in "/ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/working/pipeline_pipeline5/cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1/fs_brain_mask_to_native".
+250624-00:34:44,626 nipype.workflow INFO:
+	 [Node] Executing "fs_brain_mask_to_native" <nipype.interfaces.freesurfer.preprocess.ApplyVolTransform>
+250624-00:34:45,784 nipype.interface INFO:
+	 stdout 2025-06-24T00:34:45.784437:movvol /ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/working/pipeline_pipeline5/cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1/fs_brain_mask_to_native/brainmask_reoriented.mgz
+250624-00:34:45,785 nipype.interface INFO:
+	 stdout 2025-06-24T00:34:45.784437:targvol /ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/freesurfer/sub-NDARINV003RTV85/mri/rawavg_reoriented.mgz
+250624-00:34:45,786 nipype.interface INFO:
+	 stdout 2025-06-24T00:34:45.784437:outvol /ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/working/pipeline_pipeline5/cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1/fs_brain_mask_to_native/brainmask_reoriented_warped.mgz
+250624-00:34:45,787 nipype.interface INFO:
+	 stdout 2025-06-24T00:34:45.784437:invert 0
+250624-00:34:45,787 nipype.interface INFO:
+	 stdout 2025-06-24T00:34:45.784437:tal    0
+250624-00:34:45,788 nipype.interface INFO:
+	 stdout 2025-06-24T00:34:45.784437:talres 2
+250624-00:34:45,789 nipype.interface INFO:
+	 stdout 2025-06-24T00:34:45.784437:regheader 1
+250624-00:34:45,789 nipype.interface INFO:
+	 stdout 2025-06-24T00:34:45.784437:noresample 0
+250624-00:34:45,790 nipype.interface INFO:
+	 stdout 2025-06-24T00:34:45.784437:interp  trilinear (1)
+250624-00:34:45,791 nipype.interface INFO:
+	 stdout 2025-06-24T00:34:45.784437:precision  float (3)
+250624-00:34:45,791 nipype.interface INFO:
+	 stdout 2025-06-24T00:34:45.784437:Gdiag_no  -1
+250624-00:34:45,792 nipype.interface INFO:
+	 stdout 2025-06-24T00:34:45.784437:Synth      1
+250624-00:34:45,793 nipype.interface INFO:
+	 stdout 2025-06-24T00:34:45.784437:SynthSeed  1
+250624-00:34:45,793 nipype.interface INFO:
+	 stdout 2025-06-24T00:34:45.784437:
+250624-00:34:45,794 nipype.interface INFO:
+	 stdout 2025-06-24T00:34:45.784437:Replacing input data with synthetic white noise
+250624-00:34:45,795 nipype.interface INFO:
+	 stdout 2025-06-24T00:34:45.784437:ERROR: MRIrandn: structure passed is not MRI_FLOAT
+250624-00:34:45,795 nipype.interface INFO:
+	 stdout 2025-06-24T00:34:45.784437:
+250624-00:34:45,796 nipype.interface INFO:
+	 stdout 2025-06-24T00:34:45.784437:Computing registration based on scanner-to-scanner
+250624-00:34:45,797 nipype.interface INFO:
+	 stdout 2025-06-24T00:34:45.784437:
+250624-00:34:45,797 nipype.interface INFO:
+	 stdout 2025-06-24T00:34:45.784437:Final tkRAS-to-tkRAS Matrix is:
+250624-00:34:45,798 nipype.interface INFO:
+	 stdout 2025-06-24T00:34:45.784437: 1.00000   0.00000   0.00000   0.00000;
+250624-00:34:45,799 nipype.interface INFO:
+	 stdout 2025-06-24T00:34:45.784437: 0.00000   1.00000   0.00000   0.00000;
+250624-00:34:45,799 nipype.interface INFO:
+	 stdout 2025-06-24T00:34:45.784437: 0.00000   0.00000   1.00000   0.00000;
+250624-00:34:45,800 nipype.interface INFO:
+	 stdout 2025-06-24T00:34:45.784437: 0.00000   0.00000   0.00000   1.00000;
+250624-00:34:45,801 nipype.interface INFO:
+	 stdout 2025-06-24T00:34:45.801266:
+250624-00:34:45,801 nipype.interface INFO:
+	 stdout 2025-06-24T00:34:45.801266:
+250624-00:34:45,802 nipype.interface INFO:
+	 stdout 2025-06-24T00:34:45.801266:Vox2Vox Matrix is:
+250624-00:34:45,803 nipype.interface INFO:
+	 stdout 2025-06-24T00:34:45.801266: 1.00000   0.00000   0.00000   0.00000;
+250624-00:34:45,804 nipype.interface INFO:
+	 stdout 2025-06-24T00:34:45.801266: 0.00000   1.00000   0.00000   0.00000;
+250624-00:34:45,804 nipype.interface INFO:
+	 stdout 2025-06-24T00:34:45.801266: 0.00000   0.00000   1.00000   0.00000;
+250624-00:34:45,805 nipype.interface INFO:
+	 stdout 2025-06-24T00:34:45.801266: 0.00000   0.00000   0.00000   1.00000;
+250624-00:34:48,455 nipype.interface INFO:
+	 stdout 2025-06-24T00:34:48.455860:
+250624-00:34:48,457 nipype.interface INFO:
+	 stdout 2025-06-24T00:34:48.455860:Resampling
+250624-00:34:48,458 nipype.interface INFO:
+	 stdout 2025-06-24T00:34:48.455860:Output registration matrix is identity
+250624-00:34:48,458 nipype.interface INFO:
+	 stdout 2025-06-24T00:34:48.455860:
+250624-00:34:48,459 nipype.interface INFO:
+	 stdout 2025-06-24T00:34:48.455860:mri_vol2vol done
+250624-00:34:48,612 nipype.workflow INFO:
+	 [Node] Finished "fs_brain_mask_to_native", elapsed time 3.720882s.
+250624-00:34:48,630 nipype.workflow INFO:
+	 [Node] Setting-up "cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1.convert_fs_brainmask_to_nifti_freesurfer-bet-tight_83" in "/ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/working/pipeline_pipeline5/cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1/convert_fs_brainmask_to_nifti_freesurfer-bet-tight_83".
+250624-00:34:48,651 nipype.workflow INFO:
+	 [Node] Executing "convert_fs_brainmask_to_nifti_freesurfer-bet-tight_83" <CPAC.utils.interfaces.function.function.Function>
+mri_convert.bin /ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/freesurfer/sub-NDARINV003RTV85/mri/brainmask_reoriented.mgz /ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/freesurfer/sub-NDARINV003RTV85/mri/brainmask_reoriented.nii.gz 
+$Id: mri_convert.c,v 1.226 2016/02/26 16:15:24 mreuter Exp $
+reading from /ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/freesurfer/sub-NDARINV003RTV85/mri/brainmask_reoriented.mgz...
+TR=0.00, TE=0.00, TI=0.00, flip angle=0.00
+i_ras = (-1, 0, 0)
+j_ras = (0, 1, 0)
+k_ras = (0, 0, 1)
+writing to /ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/freesurfer/sub-NDARINV003RTV85/mri/brainmask_reoriented.nii.gz...
+250624-00:34:49,326 nipype.workflow INFO:
+	 [Node] Finished "convert_fs_brainmask_to_nifti_freesurfer-bet-tight_83", elapsed time 0.416467s.
+250624-00:34:49,347 nipype.workflow INFO:
+	 [Node] Setting-up "cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1.convert_fs_brainmask_to_nifti_freesurfer-bet-loose_83" in "/ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/working/pipeline_pipeline5/cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1/convert_fs_brainmask_to_nifti_freesurfer-bet-loose_83".
+250624-00:34:49,370 nipype.workflow INFO:
+	 [Node] Executing "convert_fs_brainmask_to_nifti_freesurfer-bet-loose_83" <CPAC.utils.interfaces.function.function.Function>
+mri_convert.bin /ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/freesurfer/sub-NDARINV003RTV85/mri/brainmask_reoriented.mgz /ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/freesurfer/sub-NDARINV003RTV85/mri/brainmask_reoriented.nii.gz 
+$Id: mri_convert.c,v 1.226 2016/02/26 16:15:24 mreuter Exp $
+reading from /ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/freesurfer/sub-NDARINV003RTV85/mri/brainmask_reoriented.mgz...
+TR=0.00, TE=0.00, TI=0.00, flip angle=0.00
+i_ras = (-1, 0, 0)
+j_ras = (0, 1, 0)
+k_ras = (0, 0, 1)
+writing to /ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/freesurfer/sub-NDARINV003RTV85/mri/brainmask_reoriented.nii.gz...
+250624-00:34:50,39 nipype.workflow INFO:
+	 [Node] Finished "convert_fs_brainmask_to_nifti_freesurfer-bet-loose_83", elapsed time 0.401002s.
+250624-00:34:50,56 nipype.workflow INFO:
+	 [Node] Setting-up "cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1.wmparc_to_native_73" in "/ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/working/pipeline_pipeline5/cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1/wmparc_to_native_73".
+250624-00:34:50,71 nipype.workflow INFO:
+	 [Node] Executing "wmparc_to_native_73" <CPAC.utils.interfaces.function.function.Function>
+250624-00:34:55,642 nipype.interface INFO:
+	 
+Matrix from LTA:
+ 0.89371   0.02193   0.02318  -1.39574;
+-0.01751   0.91813  -0.17005   6.53732;
+-0.02275   0.14066   0.86814   5.14189;
+ 0.00000   0.00000   0.00000   1.00000;
+INFO: src volume info differs from the one stored in lta. gets modified now.
+volume geometry:
+extent  : (256, 256, 256)
+voxel   : ( 1.0000,  1.0000,  1.0000)
+x_(ras) : (-1.0000,  0.0000,  0.0000)
+y_(ras) : ( 0.0000,  1.0000,  0.0000)
+z_(ras) : ( 0.0000,  0.0000,  1.0000)
+c_(ras) : ( 0.0000,  0.0000,  1.0000)
+file    : /ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/freesurfer/sub-NDARINV003RTV85/mri/wmparc_reoriented.mgz
+volume geometry:
+extent  : (256, 256, 256)
+voxel   : ( 1.0000,  1.0000,  1.0000)
+x_(ras) : (-1.0000,  0.0000,  0.0000)
+y_(ras) : ( 0.0000,  0.0000, -1.0000)
+z_(ras) : ( 0.0000,  1.0000,  0.0000)
+c_(ras) : ( 0.0000,  0.0000,  1.0000)
+file    : nu.mgz
+INFO: dst volume info differs from the one stored in lta.  gets modified now.
+volume geometry:
+extent  : (256, 256, 256)
+voxel   : ( 1.0000,  1.0000,  1.0000)
+x_(ras) : (-1.0000,  0.0000,  0.0000)
+y_(ras) : ( 0.0000,  1.0000,  0.0000)
+z_(ras) : ( 0.0000,  0.0000,  1.0000)
+c_(ras) : ( 0.0000,  0.0000,  1.0000)
+file    : /ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/freesurfer/sub-NDARINV003RTV85/mri/rawavg_reoriented.mgz
+volume geometry:
+extent  : (256, 256, 256)
+voxel   : ( 1.0000,  1.0000,  1.0000)
+x_(ras) : (-1.0000,  0.0000,  0.0000)
+y_(ras) : ( 0.0000,  0.0000, -1.0000)
+z_(ras) : ( 0.0000,  1.0000,  0.0000)
+c_(ras) : ( 0.0000,  0.0000,  0.0000)
+file    : /opt/freesurfer/average/RB_all_2016-05-10.vc700.gca
+
+/ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/freesurfer/sub-NDARINV003RTV85/mri/wmparc_reoriented.mgz /ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/freesurfer/sub-NDARINV003RTV85/mri/rawavg_reoriented.mgz
+movvol /ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/freesurfer/sub-NDARINV003RTV85/mri/wmparc_reoriented.mgz
+targvol /ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/freesurfer/sub-NDARINV003RTV85/mri/rawavg_reoriented.mgz
+outvol wmparc_warped.mgz
+regfile /ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/freesurfer/sub-NDARINV003RTV85/mri/transforms/talairach.lta
+invert 0
+tal    0
+talres 2
+regheader 0
+noresample 0
+interp  trilinear (1)
+precision  float (3)
+Gdiag_no  -1
+Synth      0
+SynthSeed  1751676967
+
+Final tkRAS-to-tkRAS Matrix is:
+ 0.89371   0.02318  -0.02193  -1.37255;
+-0.02275   0.86814  -0.14066   6.01002;
+ 0.01751   0.17005   0.91813  -6.36727;
+ 0.00000   0.00000   0.00000   1.00000;
+
+
+Vox2Vox Matrix is:
+ 0.89371  -0.02193  -0.02318   20.75152;
+ 0.01751   0.91813  -0.17005   36.37180;
+ 0.02275   0.14066   0.86814   1.97243;
+ 0.00000   0.00000   0.00000   1.00000;
+
+Resampling
+Output registration matrix is identity
+
+mri_vol2vol done
+
+250624-00:34:55,671 nipype.workflow INFO:
+	 [Node] Finished "wmparc_to_native_73", elapsed time 5.345814s.
+250624-00:34:55,688 nipype.workflow INFO:
+	 [Node] Setting-up "cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1.convert_fs_T1_to_nifti_freesurfer-bet-tight_83" in "/ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/working/pipeline_pipeline5/cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1/convert_fs_T1_to_nifti_freesurfer-bet-tight_83".
+250624-00:34:55,729 nipype.workflow INFO:
+	 [Node] Executing "convert_fs_T1_to_nifti_freesurfer-bet-tight_83" <CPAC.utils.interfaces.function.function.Function>
+mri_convert.bin /ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/freesurfer/sub-NDARINV003RTV85/mri/T1_reoriented.mgz /ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/freesurfer/sub-NDARINV003RTV85/mri/T1_reoriented.nii.gz 
+$Id: mri_convert.c,v 1.226 2016/02/26 16:15:24 mreuter Exp $
+reading from /ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/freesurfer/sub-NDARINV003RTV85/mri/T1_reoriented.mgz...
+TR=0.00, TE=0.00, TI=0.00, flip angle=0.00
+i_ras = (-1, 0, 0)
+j_ras = (0, 1, 0)
+k_ras = (0, 0, 1)
+writing to /ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/freesurfer/sub-NDARINV003RTV85/mri/T1_reoriented.nii.gz...
+250624-00:34:56,546 nipype.workflow INFO:
+	 [Node] Finished "convert_fs_T1_to_nifti_freesurfer-bet-tight_83", elapsed time 0.56329s.
+250624-00:34:56,582 nipype.workflow INFO:
+	 [Node] Setting-up "cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1.convert_fs_T1_to_nifti_freesurfer-bet-loose_83" in "/ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/working/pipeline_pipeline5/cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1/convert_fs_T1_to_nifti_freesurfer-bet-loose_83".
+250624-00:34:56,605 nipype.workflow INFO:
+	 [Node] Executing "convert_fs_T1_to_nifti_freesurfer-bet-loose_83" <CPAC.utils.interfaces.function.function.Function>
+mri_convert.bin /ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/freesurfer/sub-NDARINV003RTV85/mri/T1_reoriented.mgz /ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/freesurfer/sub-NDARINV003RTV85/mri/T1_reoriented.nii.gz 
+$Id: mri_convert.c,v 1.226 2016/02/26 16:15:24 mreuter Exp $
+reading from /ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/freesurfer/sub-NDARINV003RTV85/mri/T1_reoriented.mgz...
+TR=0.00, TE=0.00, TI=0.00, flip angle=0.00
+i_ras = (-1, 0, 0)
+j_ras = (0, 1, 0)
+k_ras = (0, 0, 1)
+writing to /ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/freesurfer/sub-NDARINV003RTV85/mri/T1_reoriented.nii.gz...
+250624-00:34:57,437 nipype.workflow INFO:
+	 [Node] Finished "convert_fs_T1_to_nifti_freesurfer-bet-loose_83", elapsed time 0.563418s.
+250624-00:34:57,446 nipype.workflow INFO:
+	 [Node] Setting-up "cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1.anat_reorient_0" in "/ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/working/pipeline_pipeline5/cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1/anat_reorient_0".
+250624-00:34:57,459 nipype.workflow INFO:
+	 [Node] Executing "anat_reorient_0" <nipype.interfaces.afni.utils.Resample>
+250624-00:35:00,29 nipype.workflow INFO:
+	 [Node] Finished "anat_reorient_0", elapsed time 2.284396s.
+250624-00:35:00,62 nipype.workflow INFO:
+	 [Node] Setting-up "cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1.bold_scan_params_sub-NDARINV003RTV85_ses-baselineYear1Arm1" in "/ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/working/pipeline_pipeline5/cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1/_scan_rest_run-01/bold_scan_params_sub-NDARINV003RTV85_ses-baselineYear1Arm1".
+250624-00:35:00,92 nipype.workflow INFO:
+	 [Node] Executing "bold_scan_params_sub-NDARINV003RTV85_ses-baselineYear1Arm1" <CPAC.utils.interfaces.function.function.Function>
+250624-00:35:00,328 nipype.workflow WARNING:
+	 None of ['Template', 'template'] found in ['EchoTime', 'FlipAngle', 'RepetitionTime', 'TaskName', 'registration_matrix_T1']. Falling back to None (<class 'NoneType'>).
+250624-00:35:00,329 nipype.workflow WARNING:
+	 None of ['acquisition', 'SliceTiming', 'SliceAcquisitionOrder'] found in ['EchoTime', 'FlipAngle', 'RepetitionTime', 'TaskName', 'registration_matrix_T1']. Falling back to None (<class 'NoneType'>).
+250624-00:35:00,330 nipype.workflow WARNING:
+	 None of ['reference'] found in ['EchoTime', 'FlipAngle', 'RepetitionTime', 'TaskName', 'registration_matrix_T1']. Falling back to None (<class 'NoneType'>).
+250624-00:35:00,330 nipype.workflow WARNING:
+	 None of ['first_TR'] found in ['EchoTime', 'FlipAngle', 'RepetitionTime', 'TaskName', 'registration_matrix_T1']. Falling back to 0 (<class 'int'>).
+250624-00:35:00,331 nipype.workflow WARNING:
+	 None of ['last_TR'] found in ['EchoTime', 'FlipAngle', 'RepetitionTime', 'TaskName', 'registration_matrix_T1']. Falling back to None (<class 'NoneType'>).
+250624-00:35:00,332 nipype.workflow WARNING:
+	 None of ['PhaseEncodingDirection'] found in ['EchoTime', 'FlipAngle', 'RepetitionTime', 'TaskName', 'registration_matrix_T1']. Falling back to  (<class 'str'>).
+250624-00:35:00,333 nipype.workflow WARNING:
+	 None of ['EffectiveEchoSpacing'] found in ['EchoTime', 'FlipAngle', 'RepetitionTime', 'TaskName', 'registration_matrix_T1']. Falling back to None (<class 'NoneType'>).
+250624-00:35:00,379 nipype.workflow INFO:
+	 [Node] Finished "bold_scan_params_sub-NDARINV003RTV85_ses-baselineYear1Arm1", elapsed time 0.007882s.
+250624-00:35:00,397 nipype.workflow INFO:
+	 [Node] Setting-up "cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1.bold_scan_params_sub-NDARINV003RTV85_ses-baselineYear1Arm1" in "/ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/working/pipeline_pipeline5/cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1/_scan_rest_run-02/bold_scan_params_sub-NDARINV003RTV85_ses-baselineYear1Arm1".
+250624-00:35:00,439 nipype.workflow INFO:
+	 [Node] Executing "bold_scan_params_sub-NDARINV003RTV85_ses-baselineYear1Arm1" <CPAC.utils.interfaces.function.function.Function>
+250624-00:35:00,667 nipype.workflow WARNING:
+	 None of ['Template', 'template'] found in ['EchoTime', 'FlipAngle', 'RepetitionTime', 'TaskName', 'registration_matrix_T1']. Falling back to None (<class 'NoneType'>).
+250624-00:35:00,668 nipype.workflow WARNING:
+	 None of ['acquisition', 'SliceTiming', 'SliceAcquisitionOrder'] found in ['EchoTime', 'FlipAngle', 'RepetitionTime', 'TaskName', 'registration_matrix_T1']. Falling back to None (<class 'NoneType'>).
+250624-00:35:00,669 nipype.workflow WARNING:
+	 None of ['reference'] found in ['EchoTime', 'FlipAngle', 'RepetitionTime', 'TaskName', 'registration_matrix_T1']. Falling back to None (<class 'NoneType'>).
+250624-00:35:00,670 nipype.workflow WARNING:
+	 None of ['first_TR'] found in ['EchoTime', 'FlipAngle', 'RepetitionTime', 'TaskName', 'registration_matrix_T1']. Falling back to 0 (<class 'int'>).
+250624-00:35:00,671 nipype.workflow WARNING:
+	 None of ['last_TR'] found in ['EchoTime', 'FlipAngle', 'RepetitionTime', 'TaskName', 'registration_matrix_T1']. Falling back to None (<class 'NoneType'>).
+250624-00:35:00,671 nipype.workflow WARNING:
+	 None of ['PhaseEncodingDirection'] found in ['EchoTime', 'FlipAngle', 'RepetitionTime', 'TaskName', 'registration_matrix_T1']. Falling back to  (<class 'str'>).
+250624-00:35:00,672 nipype.workflow WARNING:
+	 None of ['EffectiveEchoSpacing'] found in ['EchoTime', 'FlipAngle', 'RepetitionTime', 'TaskName', 'registration_matrix_T1']. Falling back to None (<class 'NoneType'>).
+250624-00:35:00,716 nipype.workflow INFO:
+	 [Node] Finished "bold_scan_params_sub-NDARINV003RTV85_ses-baselineYear1Arm1", elapsed time 0.007993s.
+250624-00:35:00,732 nipype.workflow INFO:
+	 [Node] Setting-up "cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1.bold_scan_params_sub-NDARINV003RTV85_ses-baselineYear1Arm1" in "/ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/working/pipeline_pipeline5/cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1/_scan_rest_run-03/bold_scan_params_sub-NDARINV003RTV85_ses-baselineYear1Arm1".
+250624-00:35:00,753 nipype.workflow INFO:
+	 [Node] Executing "bold_scan_params_sub-NDARINV003RTV85_ses-baselineYear1Arm1" <CPAC.utils.interfaces.function.function.Function>
+250624-00:35:00,982 nipype.workflow WARNING:
+	 None of ['Template', 'template'] found in ['EchoTime', 'FlipAngle', 'RepetitionTime', 'TaskName', 'registration_matrix_T1']. Falling back to None (<class 'NoneType'>).
+250624-00:35:00,983 nipype.workflow WARNING:
+	 None of ['acquisition', 'SliceTiming', 'SliceAcquisitionOrder'] found in ['EchoTime', 'FlipAngle', 'RepetitionTime', 'TaskName', 'registration_matrix_T1']. Falling back to None (<class 'NoneType'>).
+250624-00:35:00,983 nipype.workflow WARNING:
+	 None of ['reference'] found in ['EchoTime', 'FlipAngle', 'RepetitionTime', 'TaskName', 'registration_matrix_T1']. Falling back to None (<class 'NoneType'>).
+250624-00:35:00,985 nipype.workflow WARNING:
+	 None of ['first_TR'] found in ['EchoTime', 'FlipAngle', 'RepetitionTime', 'TaskName', 'registration_matrix_T1']. Falling back to 0 (<class 'int'>).
+250624-00:35:00,985 nipype.workflow WARNING:
+	 None of ['last_TR'] found in ['EchoTime', 'FlipAngle', 'RepetitionTime', 'TaskName', 'registration_matrix_T1']. Falling back to None (<class 'NoneType'>).
+250624-00:35:00,986 nipype.workflow WARNING:
+	 None of ['PhaseEncodingDirection'] found in ['EchoTime', 'FlipAngle', 'RepetitionTime', 'TaskName', 'registration_matrix_T1']. Falling back to  (<class 'str'>).
+250624-00:35:00,987 nipype.workflow WARNING:
+	 None of ['EffectiveEchoSpacing'] found in ['EchoTime', 'FlipAngle', 'RepetitionTime', 'TaskName', 'registration_matrix_T1']. Falling back to None (<class 'NoneType'>).
+250624-00:35:01,30 nipype.workflow INFO:
+	 [Node] Finished "bold_scan_params_sub-NDARINV003RTV85_ses-baselineYear1Arm1", elapsed time 0.008108s.
+250624-00:35:01,47 nipype.workflow INFO:
+	 [Node] Setting-up "cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1.fs_brainmask_to_nifti_79" in "/ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/working/pipeline_pipeline5/cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1/fs_brainmask_to_nifti_79".
+250624-00:35:01,76 nipype.workflow INFO:
+	 [Node] Executing "fs_brainmask_to_nifti_79" <CPAC.utils.interfaces.function.function.Function>
+mri_convert.bin /ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/working/pipeline_pipeline5/cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1/fs_brain_mask_to_native/brainmask_reoriented_warped.mgz /ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/working/pipeline_pipeline5/cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1/fs_brain_mask_to_native/brainmask_reoriented_warped.nii.gz 
+$Id: mri_convert.c,v 1.226 2016/02/26 16:15:24 mreuter Exp $
+reading from /ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/working/pipeline_pipeline5/cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1/fs_brain_mask_to_native/brainmask_reoriented_warped.mgz...
+TR=0.00, TE=0.00, TI=0.00, flip angle=0.00
+i_ras = (-1, 0, 0)
+j_ras = (0, 1, 0)
+k_ras = (0, 0, 1)
+writing to /ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/working/pipeline_pipeline5/cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1/fs_brain_mask_to_native/brainmask_reoriented_warped.nii.gz...
+250624-00:35:03,150 nipype.workflow INFO:
+	 [Node] Finished "fs_brainmask_to_nifti_79", elapsed time 1.8032810000000001s.
+250624-00:35:03,158 nipype.workflow INFO:
+	 [Node] Setting-up "cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1.reorient_fs_brainmask_freesurfer-bet-tight_83" in "/ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/working/pipeline_pipeline5/cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1/reorient_fs_brainmask_freesurfer-bet-tight_83".
+250624-00:35:03,165 nipype.workflow INFO:
+	 [Node] Executing "reorient_fs_brainmask_freesurfer-bet-tight_83" <nipype.interfaces.afni.utils.Resample>
+250624-00:35:03,952 nipype.workflow INFO:
+	 [Node] Finished "reorient_fs_brainmask_freesurfer-bet-tight_83", elapsed time 0.519504s.
+250624-00:35:03,972 nipype.workflow INFO:
+	 [Node] Setting-up "cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1.reorient_fs_brainmask_freesurfer-bet-loose_83" in "/ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/working/pipeline_pipeline5/cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1/reorient_fs_brainmask_freesurfer-bet-loose_83".
+250624-00:35:03,979 nipype.workflow INFO:
+	 [Node] Executing "reorient_fs_brainmask_freesurfer-bet-loose_83" <nipype.interfaces.afni.utils.Resample>
+250624-00:35:04,765 nipype.workflow INFO:
+	 [Node] Finished "reorient_fs_brainmask_freesurfer-bet-loose_83", elapsed time 0.499933s.
+250624-00:35:04,791 nipype.workflow INFO:
+	 [Node] Setting-up "cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1.reorient_fs_T1_freesurfer-bet-tight_83" in "/ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/working/pipeline_pipeline5/cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1/reorient_fs_T1_freesurfer-bet-tight_83".
+250624-00:35:04,798 nipype.workflow INFO:
+	 [Node] Executing "reorient_fs_T1_freesurfer-bet-tight_83" <nipype.interfaces.afni.utils.Resample>
+250624-00:35:05,771 nipype.workflow INFO:
+	 [Node] Finished "reorient_fs_T1_freesurfer-bet-tight_83", elapsed time 0.679114s.
+250624-00:35:05,787 nipype.workflow INFO:
+	 [Node] Setting-up "cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1.reorient_fs_T1_freesurfer-bet-loose_83" in "/ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/working/pipeline_pipeline5/cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1/reorient_fs_T1_freesurfer-bet-loose_83".
+250624-00:35:05,801 nipype.workflow INFO:
+	 [Node] Executing "reorient_fs_T1_freesurfer-bet-loose_83" <nipype.interfaces.afni.utils.Resample>
+250624-00:35:06,747 nipype.workflow INFO:
+	 [Node] Finished "reorient_fs_T1_freesurfer-bet-loose_83", elapsed time 0.659575s.
+250624-00:35:06,764 nipype.workflow INFO:
+	 [Node] Setting-up "cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1.wmparc_to_nifti_73" in "/ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/working/pipeline_pipeline5/cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1/wmparc_to_nifti_73".
+250624-00:35:06,785 nipype.workflow INFO:
+	 [Node] Executing "wmparc_to_nifti_73" <CPAC.utils.interfaces.function.function.Function>
+mri_convert.bin /ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/working/pipeline_pipeline5/cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1/wmparc_to_native_73/wmparc_warped.mgz /ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/working/pipeline_pipeline5/cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1/wmparc_to_native_73/wmparc_warped.nii.gz -rl /ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/working/pipeline_pipeline5/cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1/anat_reorient_0/sub-NDARINV003RTV85_ses-baselineYear1Arm1_run-01_T1w_resample.nii.gz -rt nearest 
+$Id: mri_convert.c,v 1.226 2016/02/26 16:15:24 mreuter Exp $
+reading from /ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/working/pipeline_pipeline5/cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1/wmparc_to_native_73/wmparc_warped.mgz...
+TR=0.00, TE=0.00, TI=0.00, flip angle=0.00
+i_ras = (-1, 0, 0)
+j_ras = (0, 1, 0)
+k_ras = (0, 0, 1)
+reading template info from volume /ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/working/pipeline_pipeline5/cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1/anat_reorient_0/sub-NDARINV003RTV85_ses-baselineYear1Arm1_run-01_T1w_resample.nii.gz...
+writing to /ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/working/pipeline_pipeline5/cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1/wmparc_to_native_73/wmparc_warped.nii.gz...
+250624-00:35:08,631 nipype.workflow INFO:
+	 [Node] Finished "wmparc_to_nifti_73", elapsed time 1.595103s.
+250624-00:35:08,639 nipype.workflow INFO:
+	 [Node] Setting-up "cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1.nii_desc-head-1_T1w_105" in "/ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/working/pipeline_pipeline5/cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1/nii_desc-head-1_T1w_105".
+250624-00:35:08,656 nipype.workflow INFO:
+	 [Node] Executing "nii_desc-head-1_T1w_105" <nipype.interfaces.utility.base.Rename>
+250624-00:35:08,928 nipype.workflow INFO:
+	 [Node] Finished "nii_desc-head-1_T1w_105", elapsed time 0.001214s.
+250624-00:35:08,936 nipype.workflow INFO:
+	 [Node] Setting-up "cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1.nii_desc-head-2_T1w_108" in "/ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/working/pipeline_pipeline5/cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1/nii_desc-head-2_T1w_108".
+250624-00:35:08,984 nipype.workflow INFO:
+	 [Node] Executing "nii_desc-head-2_T1w_108" <nipype.interfaces.utility.base.Rename>
+250624-00:35:09,267 nipype.workflow INFO:
+	 [Node] Finished "nii_desc-head-2_T1w_108", elapsed time 0.001142s.
+250624-00:35:09,275 nipype.workflow INFO:
+	 [Node] Setting-up "cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1.binarize_fs_brainmask_79" in "/ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/working/pipeline_pipeline5/cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1/binarize_fs_brainmask_79".
+250624-00:35:09,281 nipype.workflow INFO:
+	 [Node] Executing "binarize_fs_brainmask_79" <nipype.interfaces.fsl.maths.MathsCommand>
+250624-00:35:10,402 nipype.workflow INFO:
+	 [Node] Finished "binarize_fs_brainmask_79", elapsed time 0.846314s.
+250624-00:35:10,410 nipype.workflow INFO:
+	 [Node] Setting-up "cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1.binarize_fs_brain_freesurfer-bet-tight_83" in "/ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/working/pipeline_pipeline5/cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1/binarize_fs_brain_freesurfer-bet-tight_83".
+250624-00:35:10,416 nipype.workflow INFO:
+	 [Node] Executing "binarize_fs_brain_freesurfer-bet-tight_83" <nipype.interfaces.fsl.maths.MathsCommand>
+250624-00:35:11,356 nipype.workflow INFO:
+	 [Node] Finished "binarize_fs_brain_freesurfer-bet-tight_83", elapsed time 0.665804s.
+250624-00:35:11,364 nipype.workflow INFO:
+	 [Node] Setting-up "cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1.binarize_fs_brain_freesurfer-bet-loose_83" in "/ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/working/pipeline_pipeline5/cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1/binarize_fs_brain_freesurfer-bet-loose_83".
+250624-00:35:11,431 nipype.workflow INFO:
+	 [Node] Executing "binarize_fs_brain_freesurfer-bet-loose_83" <nipype.interfaces.fsl.maths.MathsCommand>
+250624-00:35:12,394 nipype.workflow INFO:
+	 [Node] Finished "binarize_fs_brain_freesurfer-bet-loose_83", elapsed time 0.688296s.
+250624-00:35:12,418 nipype.workflow INFO:
+	 [Node] Setting-up "cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1.convert_head_to_template_freesurfer-bet-tight_83" in "/ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/working/pipeline_pipeline5/cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1/convert_head_to_template_freesurfer-bet-tight_83".
+250624-00:35:12,426 nipype.workflow INFO:
+	 [Node] Executing "convert_head_to_template_freesurfer-bet-tight_83" <nipype.interfaces.fsl.preprocess.FLIRT>
+250624-00:36:23,576 nipype.workflow INFO:
+	 [Node] Finished "convert_head_to_template_freesurfer-bet-tight_83", elapsed time 70.876486s.
+250624-00:36:23,586 nipype.workflow INFO:
+	 [Node] Setting-up "cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1.convert_head_to_template_freesurfer-bet-loose_83" in "/ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/working/pipeline_pipeline5/cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1/convert_head_to_template_freesurfer-bet-loose_83".
+250624-00:36:23,653 nipype.workflow INFO:
+	 [Node] Executing "convert_head_to_template_freesurfer-bet-loose_83" <nipype.interfaces.fsl.preprocess.FLIRT>
+250624-00:37:34,620 nipype.workflow INFO:
+	 [Node] Finished "convert_head_to_template_freesurfer-bet-loose_83", elapsed time 70.694064s.
+250624-00:37:34,630 nipype.workflow INFO:
+	 [Node] Setting-up "cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1.binarize_wmparc_73" in "/ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/working/pipeline_pipeline5/cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1/binarize_wmparc_73".
+250624-00:37:34,674 nipype.workflow INFO:
+	 [Node] Executing "binarize_wmparc_73" <nipype.interfaces.fsl.maths.MathsCommand>
+250624-00:38:40,879 nipype.workflow INFO:
+	 [Node] Finished "binarize_wmparc_73", elapsed time 65.947363s.
+250624-00:38:40,894 nipype.workflow INFO:
+	 [Node] Setting-up "cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1.sinker_desc-head-1_T1w_105" in "/ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/working/pipeline_pipeline5/cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1/sinker_desc-head-1_T1w_105".
+250624-00:38:40,902 nipype.workflow INFO:
+	 [Node] Executing "sinker_desc-head-1_T1w_105" <CPAC.utils.interfaces.datasink.DataSink>
+250624-00:38:41,180 nipype.workflow INFO:
+	 [Node] Finished "sinker_desc-head-1_T1w_105", elapsed time 0.005599s.
+250624-00:38:41,188 nipype.workflow INFO:
+	 [Node] Setting-up "cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1.sinker_desc-head-2_T1w_108" in "/ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/working/pipeline_pipeline5/cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1/sinker_desc-head-2_T1w_108".
+250624-00:38:41,201 nipype.workflow INFO:
+	 [Node] Executing "sinker_desc-head-2_T1w_108" <CPAC.utils.interfaces.datasink.DataSink>
+250624-00:38:41,473 nipype.workflow INFO:
+	 [Node] Finished "sinker_desc-head-2_T1w_108", elapsed time 0.002939s.
+250624-00:38:41,481 nipype.workflow INFO:
+	 [Node] Setting-up "cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1.fill_fs_brainmask_79" in "/ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/working/pipeline_pipeline5/cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1/fill_fs_brainmask_79".
+250624-00:38:41,520 nipype.workflow INFO:
+	 [Node] Executing "fill_fs_brainmask_79" <nipype.interfaces.afni.utils.MaskTool>
+250624-00:38:41,801 nipype.interface INFO:
+	 stderr 2025-06-24T00:38:41.801259:++ no -frac option: defaulting to -union
+250624-00:38:41,802 nipype.interface INFO:
+	 stderr 2025-06-24T00:38:41.801259:++ processing 1 input dataset(s), NN=2...
+250624-00:38:41,803 nipype.interface INFO:
+	 stderr 2025-06-24T00:38:41.801259:++ padding all datasets by 0 (for dilations)
+250624-00:38:42,93 nipype.interface INFO:
+	 stderr 2025-06-24T00:38:42.093918:++ frac 0 over 1 volumes gives min count 0
+250624-00:38:42,106 nipype.interface INFO:
+	 stderr 2025-06-24T00:38:42.106403:++ voxel limits: 0 clipped, 1440592 survived, 15336624 were zero
+250624-00:38:42,477 nipype.interface INFO:
+	 stderr 2025-06-24T00:38:42.477712:++ filled 756 holes (1153 voxels)
+250624-00:38:42,489 nipype.interface INFO:
+	 stderr 2025-06-24T00:38:42.489541:++ writing result brainmask_reoriented_warped_maths_mask.nii.gz...
+250624-00:38:42,624 nipype.interface INFO:
+	 stderr 2025-06-24T00:38:42.624026:++ Output dataset ./brainmask_reoriented_warped_maths_mask.nii.gz
+250624-00:38:42,771 nipype.workflow INFO:
+	 [Node] Finished "fill_fs_brainmask_79", elapsed time 0.991731s.
+250624-00:38:42,783 nipype.workflow INFO:
+	 [Node] Setting-up "cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1.convert_xfm_freesurfer-bet-tight_83" in "/ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/working/pipeline_pipeline5/cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1/convert_xfm_freesurfer-bet-tight_83".
+250624-00:38:42,797 nipype.workflow INFO:
+	 [Node] Executing "convert_xfm_freesurfer-bet-tight_83" <nipype.interfaces.fsl.utils.ConvertXFM>
+250624-00:38:43,204 nipype.workflow INFO:
+	 [Node] Finished "convert_xfm_freesurfer-bet-tight_83", elapsed time 0.151762s.
+250624-00:38:43,219 nipype.workflow INFO:
+	 [Node] Setting-up "cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1.anat_BET_skullstrip_freesurfer-bet-tight_83" in "/ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/working/pipeline_pipeline5/cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1/anat_BET_skullstrip_freesurfer-bet-tight_83".
+250624-00:38:43,259 nipype.workflow INFO:
+	 [Node] Executing "anat_BET_skullstrip_freesurfer-bet-tight_83" <nipype.interfaces.fsl.preprocess.BET>
+250624-00:38:46,160 nipype.workflow INFO:
+	 [Node] Finished "anat_BET_skullstrip_freesurfer-bet-tight_83", elapsed time 2.6263769999999997s.
+250624-00:38:46,168 nipype.workflow INFO:
+	 [Node] Setting-up "cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1.convert_xfm_freesurfer-bet-loose_83" in "/ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/working/pipeline_pipeline5/cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1/convert_xfm_freesurfer-bet-loose_83".
+250624-00:38:46,184 nipype.workflow INFO:
+	 [Node] Executing "convert_xfm_freesurfer-bet-loose_83" <nipype.interfaces.fsl.utils.ConvertXFM>
+250624-00:38:46,600 nipype.workflow INFO:
+	 [Node] Finished "convert_xfm_freesurfer-bet-loose_83", elapsed time 0.152743s.
+250624-00:38:46,608 nipype.workflow INFO:
+	 [Node] Setting-up "cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1.anat_BET_skullstrip_freesurfer-bet-loose_83" in "/ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/working/pipeline_pipeline5/cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1/anat_BET_skullstrip_freesurfer-bet-loose_83".
+250624-00:38:46,616 nipype.workflow INFO:
+	 [Node] Executing "anat_BET_skullstrip_freesurfer-bet-loose_83" <nipype.interfaces.fsl.preprocess.BET>
+250624-00:38:49,808 nipype.workflow INFO:
+	 [Node] Finished "anat_BET_skullstrip_freesurfer-bet-loose_83", elapsed time 2.914512s.
+250624-00:38:49,836 nipype.workflow INFO:
+	 [Node] Setting-up "cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1.wb_command_fill_holes_73" in "/ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/working/pipeline_pipeline5/cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1/wb_command_fill_holes_73".
+250624-00:38:49,843 nipype.workflow INFO:
+	 [Node] Executing "wb_command_fill_holes_73" <CPAC.utils.interfaces.function.function.Function>
+250624-00:38:54,210 nipype.workflow INFO:
+	 [Node] Finished "wb_command_fill_holes_73", elapsed time 4.101773s.
+250624-00:38:54,219 nipype.workflow INFO:
+	 [Node] Setting-up "cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1.brain_extraction_100" in "/ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/working/pipeline_pipeline5/cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1/brain_extraction_100".
+250624-00:38:54,250 nipype.workflow INFO:
+	 [Node] Executing "brain_extraction_100" <nipype.interfaces.afni.utils.Calc>
+250624-00:38:54,675 nipype.interface INFO:
+	 stderr 2025-06-24T00:38:54.675286:++ 3dcalc: AFNI version=AFNI_23.3.09 (May  8 2025) [64-bit]
+250624-00:38:54,676 nipype.interface INFO:
+	 stderr 2025-06-24T00:38:54.675286:++ Authored by: A cast of thousands
+250624-00:38:56,78 nipype.interface INFO:
+	 stderr 2025-06-24T00:38:56.078912:++ Output dataset ./sub-NDARINV003RTV85_ses-baselineYear1Arm1_run-01_T1w_resample_calc.nii.gz
+250624-00:38:56,242 nipype.workflow INFO:
+	 [Node] Finished "brain_extraction_100", elapsed time 1.7038389999999999s.
+250624-00:38:56,250 nipype.workflow INFO:
+	 [Node] Setting-up "cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1.nii_space-T1w_desc-brain-2_mask_82" in "/ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/working/pipeline_pipeline5/cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1/nii_space-T1w_desc-brain-2_mask_82".
+250624-00:38:56,264 nipype.workflow INFO:
+	 [Node] Executing "nii_space-T1w_desc-brain-2_mask_82" <nipype.interfaces.utility.base.Rename>
+250624-00:38:56,536 nipype.workflow INFO:
+	 [Node] Finished "nii_space-T1w_desc-brain-2_mask_82", elapsed time 0.001239s.
+250624-00:38:56,558 nipype.workflow INFO:
+	 [Node] Setting-up "cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1.binarize_filled_wmparc_73" in "/ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/working/pipeline_pipeline5/cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1/binarize_filled_wmparc_73".
+250624-00:38:56,602 nipype.workflow INFO:
+	 [Node] Executing "binarize_filled_wmparc_73" <nipype.interfaces.fsl.maths.MathsCommand>
+250624-00:38:57,766 nipype.workflow INFO:
+	 [Node] Finished "binarize_filled_wmparc_73", elapsed time 0.885844s.
+250624-00:38:57,785 nipype.workflow INFO:
+	 [Node] Setting-up "cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1.nii_desc-preproc-2_T1w_106" in "/ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/working/pipeline_pipeline5/cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1/nii_desc-preproc-2_T1w_106".
+250624-00:38:57,804 nipype.workflow INFO:
+	 [Node] Executing "nii_desc-preproc-2_T1w_106" <nipype.interfaces.utility.base.Rename>
+250624-00:38:58,94 nipype.workflow INFO:
+	 [Node] Finished "nii_desc-preproc-2_T1w_106", elapsed time 0.001349s.
+250624-00:38:58,101 nipype.workflow INFO:
+	 [Node] Setting-up "cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1.sinker_space-T1w_desc-brain-2_mask_82" in "/ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/working/pipeline_pipeline5/cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1/sinker_space-T1w_desc-brain-2_mask_82".
+250624-00:38:58,110 nipype.workflow INFO:
+	 [Node] Executing "sinker_space-T1w_desc-brain-2_mask_82" <CPAC.utils.interfaces.datasink.DataSink>
+250624-00:38:58,384 nipype.workflow INFO:
+	 [Node] Finished "sinker_space-T1w_desc-brain-2_mask_82", elapsed time 0.00342s.
+250624-00:38:58,393 nipype.workflow INFO:
+	 [Node] Setting-up "cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1.brain_mask_to_t1_restore_73" in "/ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/working/pipeline_pipeline5/cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1/brain_mask_to_t1_restore_73".
+250624-00:38:58,430 nipype.workflow INFO:
+	 [Node] Executing "brain_mask_to_t1_restore_73" <nipype.interfaces.fsl.preprocess.ApplyWarp>
+250624-00:39:01,357 nipype.workflow INFO:
+	 [Node] Finished "brain_mask_to_t1_restore_73", elapsed time 2.638843s.
+250624-00:39:01,379 nipype.workflow INFO:
+	 [Node] Setting-up "cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1.sinker_desc-preproc-2_T1w_106" in "/ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/working/pipeline_pipeline5/cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1/sinker_desc-preproc-2_T1w_106".
+250624-00:39:01,398 nipype.workflow INFO:
+	 [Node] Executing "sinker_desc-preproc-2_T1w_106" <CPAC.utils.interfaces.datasink.DataSink>
+250624-00:39:01,669 nipype.workflow INFO:
+	 [Node] Finished "sinker_desc-preproc-2_T1w_106", elapsed time 0.002964s.
+250624-00:39:01,678 nipype.workflow INFO:
+	 [Node] Setting-up "cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1.brain_extraction_97" in "/ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/working/pipeline_pipeline5/cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1/brain_extraction_97".
+250624-00:39:01,704 nipype.workflow INFO:
+	 [Node] Executing "brain_extraction_97" <nipype.interfaces.afni.utils.Calc>
+250624-00:39:01,993 nipype.interface INFO:
+	 stderr 2025-06-24T00:39:01.993516:++ 3dcalc: AFNI version=AFNI_23.3.09 (May  8 2025) [64-bit]
+250624-00:39:01,994 nipype.interface INFO:
+	 stderr 2025-06-24T00:39:01.993516:++ Authored by: A cast of thousands
+250624-00:39:03,652 nipype.interface INFO:
+	 stderr 2025-06-24T00:39:03.652411:++ Output dataset ./sub-NDARINV003RTV85_ses-baselineYear1Arm1_run-01_T1w_resample_calc.nii.gz
+250624-00:39:03,788 nipype.workflow INFO:
+	 [Node] Finished "brain_extraction_97", elapsed time 1.7955649999999999s.
+250624-00:39:03,810 nipype.workflow INFO:
+	 [Node] Setting-up "cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1.nii_space-T1w_desc-brain-1_mask_78" in "/ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/working/pipeline_pipeline5/cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1/nii_space-T1w_desc-brain-1_mask_78".
+250624-00:39:03,836 nipype.workflow INFO:
+	 [Node] Executing "nii_space-T1w_desc-brain-1_mask_78" <nipype.interfaces.utility.base.Rename>
+250624-00:39:04,106 nipype.workflow INFO:
+	 [Node] Finished "nii_space-T1w_desc-brain-1_mask_78", elapsed time 0.001293s.
+250624-00:39:04,116 nipype.workflow INFO:
+	 [Node] Setting-up "cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1.nii_desc-preproc-1_T1w_103" in "/ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/working/pipeline_pipeline5/cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1/nii_desc-preproc-1_T1w_103".
+250624-00:39:04,128 nipype.workflow INFO:
+	 [Node] Executing "nii_desc-preproc-1_T1w_103" <nipype.interfaces.utility.base.Rename>
+250624-00:39:04,399 nipype.workflow INFO:
+	 [Node] Finished "nii_desc-preproc-1_T1w_103", elapsed time 0.00127s.
+250624-00:39:04,407 nipype.workflow INFO:
+	 [Node] Setting-up "cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1.sinker_space-T1w_desc-brain-1_mask_78" in "/ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/working/pipeline_pipeline5/cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1/sinker_space-T1w_desc-brain-1_mask_78".
+250624-00:39:04,426 nipype.workflow INFO:
+	 [Node] Executing "sinker_space-T1w_desc-brain-1_mask_78" <CPAC.utils.interfaces.datasink.DataSink>
+250624-00:39:04,695 nipype.workflow INFO:
+	 [Node] Finished "sinker_space-T1w_desc-brain-1_mask_78", elapsed time 0.002987s.
+250624-00:39:04,705 nipype.workflow INFO:
+	 [Node] Setting-up "cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1.sinker_desc-preproc-1_T1w_103" in "/ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/working/pipeline_pipeline5/cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1/sinker_desc-preproc-1_T1w_103".
+250624-00:39:04,738 nipype.workflow INFO:
+	 [Node] Executing "sinker_desc-preproc-1_T1w_103" <CPAC.utils.interfaces.datasink.DataSink>
+250624-00:39:05,18 nipype.workflow INFO:
+	 [Node] Finished "sinker_desc-preproc-1_T1w_103", elapsed time 0.002904s.
+250624-00:39:05,27 nipype.workflow INFO:
+	 ***********************************
+250624-00:39:05,27 nipype.workflow ERROR:
+	 could not run node: cpac_pipeline_pipeline5_sub-NDARINV003RTV85_ses-baselineYear1Arm1.gather_T1w-brain-template-mask-ccs.check_for_s3
+250624-00:39:05,28 nipype.workflow INFO:
+	 crashfile: /ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/log/crash-20250624-003320-bshresth-check_for_s3-e5d37314-edc8-4680-af4b-6e9c6ff5e28e.txt
+250624-00:39:05,29 nipype.workflow INFO:
+	 ***********************************
+Traceback (most recent call last):
+  File "/code/CPAC/pipeline/cpac_pipeline.py", line 604, in run_workflow
+    workflow_result = workflow.run(plugin=plugin, plugin_args=plugin_args)
+  File "/usr/share/fsl/6.0/lib/python3.10/site-packages/nipype/pipeline/engine/workflows.py", line 638, in run
+    runner.run(execgraph, updatehash=updatehash, config=self.config)
+  File "/usr/share/fsl/6.0/lib/python3.10/site-packages/nipype/pipeline/plugins/linear.py", line 82, in run
+    raise error from cause
+  File "/usr/share/fsl/6.0/lib/python3.10/site-packages/nipype/pipeline/plugins/linear.py", line 47, in run
+    node.run(updatehash=updatehash)
+  File "/code/CPAC/pipeline/nipype_pipeline_engine/engine.py", line 474, in run
+    return super().run(updatehash)
+  File "/usr/share/fsl/6.0/lib/python3.10/site-packages/nipype/pipeline/engine/nodes.py", line 527, in run
+    result = self._run_interface(execute=True)
+  File "/usr/share/fsl/6.0/lib/python3.10/site-packages/nipype/pipeline/engine/nodes.py", line 645, in _run_interface
+    return self._run_command(execute)
+  File "/usr/share/fsl/6.0/lib/python3.10/site-packages/nipype/pipeline/engine/nodes.py", line 771, in _run_command
+    raise NodeExecutionError(msg)
+nipype.pipeline.engine.nodes.NodeExecutionError: Exception raised while executing Node check_for_s3.
+
+Traceback:
+	Traceback (most recent call last):
+	  File "/code/CPAC/pipeline/nipype_pipeline_engine/monkeypatch.py", line 40, in run
+	    runtime = self._run_interface(runtime)
+	  File "/code/CPAC/utils/interfaces/function/function.py", line 331, in _run_interface
+	    out = function_handle(**args)
+	  File "<string>", line 97, in check_for_s3
+	NameError: name '__file__' is not defined
+

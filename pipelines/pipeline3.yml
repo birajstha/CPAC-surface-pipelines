@@ -27,7 +27,7 @@ pipeline_setup:
     # - Conversely, using too little RAM can impede the speed of a pipeline run.
     # - It is recommended that you set this to a value that when multiplied by
     #   'Number of Participants to Run Simultaneously' is as much RAM you can safely allocate.
-    maximum_memory_per_participant: 10.0
+
     random_seed: 1
     
     raise_insufficient: Off
@@ -203,7 +203,7 @@ registration_workflows:
         interpolation: Linear
 
     overwrite_transform:
-      run: Off
+      run: On
 
       # Choose the tool to overwrite transform, currently only support 'FSL' to overwrite 'ANTs' transforms in ABCD-options pipeline.
       # using: 'FSL'

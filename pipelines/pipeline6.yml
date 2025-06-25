@@ -4,7 +4,6 @@ pipeline_setup:
   pipeline_name: pipeline6
   freesurfer_dir: /ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/freesurfer
   system_config:
-    maximum_memory_per_participant: 10.0
     random_seed: 1
     raise_insufficient: Off
 
