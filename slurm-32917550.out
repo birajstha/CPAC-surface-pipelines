@@ -1,6 +1,0 @@
-Traceback (most recent call last):
-  File "/code/CPAC/_entrypoints/run.py", line 36, in <module>
-    from CPAC.pipeline.schema import str_to_bool1_1
-  File "/code/CPAC/pipeline/schema.py", line 58, in <module>
-    from voluptuous.schema_builder import Schemable, UNDEFINED
-ImportError: cannot import name 'Schemable' from 'voluptuous.schema_builder' (/usr/share/fsl/6.0/lib/python3.10/site-packages/voluptuous/schema_builder.py)

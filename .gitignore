@@ -2,3 +2,6 @@ outputs
 run_*
 *.log
 freesurfer*
+venv
+slurm-*
+*.sif
