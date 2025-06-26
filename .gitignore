@@ -1,4 +1,5 @@
 outputs
+clean_outputs
 run_*
 *.log
 freesurfer*

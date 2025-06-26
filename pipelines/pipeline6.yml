@@ -11,7 +11,7 @@ segmentation:
 
   # Automatically segment anatomical images into white matter, gray matter,
   # and CSF based on prior probability maps.
-  run: Off
+  run: On
   tissue_segmentation:
 
     # using: ['FSL-FAST', 'Template_Based', 'ANTs_Prior_Based', 'FreeSurfer']
@@ -99,9 +99,9 @@ registration_workflows:
       run: Off
 
 functional_preproc:
-  run: On
+  run: Off
   template_space_func_masking:
-    run: On
+    run: Off
     # Anatomical_Resampled: Resample anatomical brain mask in standard space to get BOLD brain mask in standard space. Adapted from DCAN Lab's BOLD mask method from the ABCD pipeline. ("Create fMRI resolution standard space files for T1w image, wmparc, and brain mask […] don't use FLIRT to do spline interpolation with -applyisoxfm for the 2mm and 1mm cases because it doesn't know the peculiarities of the MNI template FOVs")
     using: [Anatomical_Resampled]
 

@@ -85,13 +85,24 @@ anatomical_preproc:
   restore_t1w_intensity:
     run: Off
 
+functional_preproc:
+  run: Off
+  template_space_func_masking:
+    run: Off
+
 registration_workflows:
 
   # sink native transform files to the output directory
   sink_native_transforms: Off
   anatomical_registration:
     run: On
-
+  functional_registration:
+    coregistration:
+      run: Off
+    func_registration_to_template:
+      run: Off
+    EPI_registration:
+      run: Off
 
 nuisance_corrections:
   2-nuisance_regression:
