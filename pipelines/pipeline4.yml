@@ -47,6 +47,7 @@ surface_analysis:
     surface_parcellation_template: /cpac_templates/Schaefer2018_200Parcels_17Networks_order.dlabel.nii
 
 anatomical_preproc:
+  deoblique: [warp]
   run: On
   acpc_alignment:
     T1w_brain_ACPC_template: $FSLDIR/data/standard/MNI152_T1_1mm_brain.nii.gz
@@ -96,6 +97,9 @@ registration_workflows:
   sink_native_transforms: Off
   anatomical_registration:
     run: On
+    overwrite_transform:
+      run: On
+
   functional_registration:
     coregistration:
       run: Off

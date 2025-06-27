@@ -1,98 +1,43 @@
 
 %YAML 1.1
 ---
-# CPAC Pipeline Configuration YAML file
-# Version 1.8.8.dev1
-#
-# http://fcp-indi.github.io for more info.
-#
-# Tip: This file can be edited manually with a text editor for quick modifications.
 FROM: abcd-prep
-
 pipeline_setup:
-
-  # Name for this pipeline configuration - useful for identification.
-  # This string will be sanitized and used in filepaths
   pipeline_name: pipeline1
   output_directory:
     quality_control:
-      # Generate eXtensible Connectivity Pipeline-style quality control files
       generate_xcpqc_files: Off
   system_config:
-
-    # The maximum amount of memory each participant's workflow can allocate.
-    # Use this to place an upper bound of memory usage.
-    # - Warning: 'Memory Per Participant' multiplied by 'Number of Participants to Run Simultaneously'
-    #   must not be more than the total amount of RAM.
-    # - Conversely, using too little RAM can impede the speed of a pipeline run.
-    # - It is recommended that you set this to a value that when multiplied by
-    #   'Number of Participants to Run Simultaneously' is as much RAM you can safely allocate.
     maximum_memory_per_participant: 10.0
-    
     random_seed: 1
-    
     raise_insufficient: Off
 
-# PREPROCESSING
-# -------------
 surface_analysis:
-
-  # Run freesurfer_abcd_preproc to obtain preprocessed T1w for reconall
   abcd_prefreesurfer_prep:
     run: On
-
-    # Reference mask with 2mm resolution to be used during FNIRT-based brain extraction in ABCD-options pipeline.
-    ref_mask_res-2: /opt/dcan-tools/pipeline/global/templates/MNI152_T1_2mm_brain_mask_dil.nii.gz
-
-    # Template with 2mm resolution to be used during FNIRT-based brain extraction in ABCD-options pipeline.
-    T1w_template_res-2: /opt/dcan-tools/pipeline/global/templates/MNI152_T1_2mm.nii.gz
 
 anatomical_preproc:
   run: On
   acpc_alignment:
-    T1w_brain_ACPC_template: $FSLDIR/data/standard/MNI152_T1_1mm_brain.nii.gz
     run: Off
-
-    # Run ACPC alignment before non-local means filtering or N4 bias
-    # correction
     run_before_preproc: Off
-
-    # ACPC aligned template
-    T1w_ACPC_template: /opt/dcan-tools/pipeline/global/templates/MNI152_T1_1mm.nii.gz
 
   brain_extraction:
     run: Off
-    # using: ['3dSkullStrip', 'BET', 'UNet', 'niworkflows-ants', 'FreeSurfer-ABCD', 'FreeSurfer-BET-Tight', 'FreeSurfer-BET-Loose', 'FreeSurfer-Brainmask']
-    # this is a fork option
     using: [FreeSurfer-ABCD]
 
-  # Non-local means filtering via ANTs DenoiseImage
   non_local_means_filtering:
-
-    # this is a fork option
     run: [Off]
 
-    # options: 'Gaussian' or 'Rician'
-    noise_model: Rician
-
-  # N4 bias field correction via ANTs
   n4_bias_field_correction:
-
-    # this is a fork option
     run: [Off]
-
-    # An integer to resample the input image to save computation time. Shrink factors <= 4 are commonly used.
-    shrink_factor: 4
 
 registration_workflows:
   anatomical_registration:
     run: Off
 
-
   functional_registration:
     coregistration:
-
-      # functional (BOLD/EPI) registration to anatomical (structural/T1)
       run: Off
       
 
