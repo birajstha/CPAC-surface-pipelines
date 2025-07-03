@@ -1,10 +1,10 @@
 
 FROM: abcd-options
 pipeline_setup:
-  pipeline_name: pipeline8
+  pipeline_name: pipeline9
   freesurfer_dir: /ocean/projects/med250004p/bshresth/projects/surface_pipelines/outputs/freesurfer
-
   system_config:
+    maximum_memory_per_participant: 10.0
     random_seed: 1
     raise_insufficient: Off
 
@@ -33,21 +33,20 @@ surface_analysis:
 
   # Run ABCD-HCP post FreeSurfer and fMRISurface pipeline
   post_freesurfer:
-    run: Off
+    run: On
 
 
   amplitude_low_frequency_fluctuation:
-    run: Off
+    run: On
 
   regional_homogeneity:
-    run: Off
+    run: On
 
   surface_connectivity:
-    run: Off
+    run: On
     surface_parcellation_template: /cpac_templates/Schaefer2018_200Parcels_17Networks_order.dlabel.nii
 
 anatomical_preproc:
-  deoblique: [warp]
   run: On
   acpc_alignment:
     T1w_brain_ACPC_template: $FSLDIR/data/standard/MNI152_T1_1mm_brain.nii.gz
@@ -70,7 +69,7 @@ anatomical_preproc:
   non_local_means_filtering:
 
     # this is a fork option
-    run: [Off]
+    run: [On]
 
     # options: 'Gaussian' or 'Rician'
     noise_model: Rician
@@ -86,11 +85,6 @@ anatomical_preproc:
   restore_t1w_intensity:
     run: On
 
-functional_preproc:
-  run: Off
-  template_space_func_masking:
-    run: Off
-
 registration_workflows:
 
   # sink native transform files to the output directory
@@ -98,15 +92,21 @@ registration_workflows:
   anatomical_registration:
     run: On
     overwrite_transform:
-      run: On
-
+      run: Off
   functional_registration:
     coregistration:
-      run: Off
+      run: On
     func_registration_to_template:
-      run: Off
+      run: On
     EPI_registration:
       run: Off
+
+functional_preproc:
+  run: On
+  template_space_func_masking:
+    run: On
+    # Anatomical_Resampled: Resample anatomical brain mask in standard space to get BOLD brain mask in standard space. Adapted from DCAN Lab's BOLD mask method from the ABCD pipeline. ("Create fMRI resolution standard space files for T1w image, wmparc, and brain mask […] don't use FLIRT to do spline interpolation with -applyisoxfm for the 2mm and 1mm cases because it doesn't know the peculiarities of the MNI template FOVs")
+    using: [Anatomical_Resampled]
 
 nuisance_corrections:
   2-nuisance_regression:
